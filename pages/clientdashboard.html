@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium fitness trainer website header with responsive navigation, dark mode, RTL support, and a high-end hero section."
+    />
+    <title>PulseForge Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    
+  </head>
+  <body class="dashboard-page">
+    <!-- HEADER -->
+<header class="site-header" data-header>
+  <div class="container">
+    <div class="navbar">
+
+      <!-- LOGO -->
+      <a class="brand" href="HomePage-1.html">
+        <span class="brand__mark">
+          <i class="fa-solid fa-dumbbell"></i>
+        </span>
+        <span class="brand__copy">
+          <strong>PulseForge</strong>
+          <small>Performance Coaching</small>
+        </span>
+      </a>
+
+      <!-- RIGHT SIDE -->
+      <div class="header-tools">
+
+        <!-- RTL -->
+        <button class="utility-button" data-rtl-toggle>
+          <i class="fa-solid fa-globe"></i>
+        </button>
+
+        <!-- DARK -->
+        <button class="utility-button" data-theme-toggle>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <!-- NOTIFICATIONS -->
+        <div class="notification-wrap" data-notification-wrap>
+          <button
+            class="utility-button notification-toggle"
+            type="button"
+            data-notification-toggle
+            aria-expanded="false"
+            aria-label="Open notifications"
+          >
+            <i class="fa-solid fa-bell" aria-hidden="true"></i>
+          </button>
+
+          <section class="notification-dropdown" data-notification-panel aria-label="Notifications" aria-hidden="true">
+            <div class="notification-dropdown__header">
+              <h3>Notifications</h3>
+              <span class="notification-badge" data-notification-count>3</span>
+            </div>
+
+            <ul class="notification-list" role="list">
+              <li class="notification-item is-unread" data-notification-item>
+                <button class="notification-item__button" type="button" aria-label="Workout completed notification">
+                  <span class="notification-item__avatar">
+                    <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                  </span>
+                  <span class="notification-item__content">
+                    <span class="notification-item__title">Workout Completed</span>
+                    <span class="notification-item__desc">Crushed your upper-body session. Great pace.</span>
+                    <time class="notification-item__time" datetime="2026-03-17T09:22">2 mins ago</time>
+                  </span>
+                  <span class="notification-dot" aria-hidden="true"></span>
+                </button>
+              </li>
+
+              <li class="notification-item is-unread" data-notification-item>
+                <button class="notification-item__button" type="button" aria-label="New message from coach">
+                  <span class="notification-item__avatar notification-item__avatar--accent">
+                    <i class="fa-solid fa-message" aria-hidden="true"></i>
+                  </span>
+                  <span class="notification-item__content">
+                    <span class="notification-item__title">New Message from Coach</span>
+                    <span class="notification-item__desc">Updated your recovery plan for this week.</span>
+                    <time class="notification-item__time" datetime="2026-03-17T08:55">28 mins ago</time>
+                  </span>
+                  <span class="notification-dot" aria-hidden="true"></span>
+                </button>
+              </li>
+
+              <li class="notification-item" data-notification-item>
+                <button class="notification-item__button" type="button" aria-label="Nutrition plan updated">
+                  <span class="notification-item__avatar">
+                    <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                  </span>
+                  <span class="notification-item__content">
+                    <span class="notification-item__title">Nutrition Plan Updated</span>
+                    <span class="notification-item__desc">New macro targets are live for your cut phase.</span>
+                    <time class="notification-item__time" datetime="2026-03-16T19:10">Yesterday</time>
+                  </span>
+                </button>
+              </li>
+
+              <li class="notification-item" data-notification-item>
+                <button class="notification-item__button" type="button" aria-label="Session booked">
+                  <span class="notification-item__avatar notification-item__avatar--success">
+                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                  </span>
+                  <span class="notification-item__content">
+                    <span class="notification-item__title">Session Booked</span>
+                    <span class="notification-item__desc">Your 1:1 coaching session is locked in.</span>
+                    <time class="notification-item__time" datetime="2026-03-16T10:45">Yesterday</time>
+                  </span>
+                </button>
+              </li>
+            </ul>
+
+            <div class="notification-dropdown__footer">
+              <a href="#" class="notification-view-all">View All Notifications</a>
+            </div>
+          </section>
+        </div>
+
+        <!-- PROFILE DROPDOWN -->
+        <div class="profile-dropdown has-dropdown" data-dropdown>
+          <button
+            class="profile-toggle"
+            type="button"
+            data-dropdown-toggle
+            aria-expanded="false"
+            aria-label="Open profile menu"
+          >
+            <span class="profile-avatar">
+              <img
+                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%238dff2f'/><stop offset='1' stop-color='%2320d67e'/></linearGradient></defs><rect width='96' height='96' rx='28' fill='url(%23g)'/><text x='48' y='54' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='34' fill='%230d1525'>JD</text></svg>"
+                alt="John Doe"
+              />
+            </span>
+            <span class="profile-name">John Doe</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+
+          <div class="dropdown-menu profile-menu" role="menu">
+            <div class="dropdown-menu__inner">
+              <a href="#" role="menuitem">Profile</a>
+              <a href="login.html" role="menuitem">Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR TOGGLE -->
+        <button class="menu-button" id="sidebarToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- DASHBOARD -->
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+    <nav class="dashboard-menu">
+
+      <button class="menu-link active" data-target="dashboard">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Dashboard</span>
+      </button>
+
+      <button class="menu-link" data-target="workouts">
+        <i class="fa-solid fa-dumbbell"></i>
+        <span>Workout Plans</span>
+      </button>
+
+      <button class="menu-link" data-target="nutrition">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Nutrition Tracker</span>
+      </button>
+
+      <button class="menu-link" data-target="progress">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Progress Analytics</span>
+      </button>
+
+      <button class="menu-link" data-target="schedule">
+        <i class="fa-solid fa-calendar"></i>
+        <span>Weekly Schedule</span>
+      </button>
+
+      <button class="menu-link" data-target="messages">
+        <i class="fa-solid fa-comments"></i>
+        <span>Coach Messages</span>
+      </button>
+
+    </nav>
+  </aside>
+  <div class="dashboard-overlay" data-dashboard-overlay></div>
+
+  <!-- CONTENT -->
+  <div class="dashboard-content-wrapper">
+
+    <div class="dashboard-content">
+
+      <section class="dashboard-panel active" id="dashboard">
+        <div class="dashboard-overview">
+          <header class="dashboard-overview__header">
+            <div>
+              <p class="dashboard-kicker">Performance Snapshot</p>
+              <h2>Dashboard Overview</h2>
+              <p class="dashboard-subtitle">Track workouts, nutrition, and progress at a glance.</p>
+            </div>
+            <div class="dashboard-overview__actions">
+              <button class="button button--outline" type="button">Export Report</button>
+              <button class="button button--primary" type="button">Start Session</button>
+            </div>
+          </header>
+
+          <div class="dashboard-summary-grid">
+            <article class="dashboard-summary-card">
+              <div class="summary-icon">
+                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+              </div>
+              <div>
+                <p>Total Workouts</p>
+                <h3>128</h3>
+                <span class="summary-meta">+14% vs last month</span>
+              </div>
+            </article>
+
+            <article class="dashboard-summary-card">
+              <div class="summary-icon summary-icon--accent">
+                <i class="fa-solid fa-fire" aria-hidden="true"></i>
+              </div>
+              <div>
+                <p>Calories Burned</p>
+                <h3>18.4k</h3>
+                <span class="summary-meta">Avg 620 / day</span>
+              </div>
+            </article>
+
+            <article class="dashboard-summary-card">
+              <div class="summary-icon summary-icon--cool">
+                <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+              </div>
+              <div>
+                <p>Active Plan</p>
+                <h3>Strength Pro</h3>
+                <span class="summary-meta">Week 5 of 12</span>
+              </div>
+            </article>
+
+            <article class="dashboard-summary-card">
+              <div class="summary-icon summary-icon--violet">
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              </div>
+              <div>
+                <p>Weekly Progress</p>
+                <h3>78%</h3>
+                <span class="summary-meta">3 sessions left</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="dashboard-analytics-grid">
+            <div class="dashboard-analytics-main">
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Workout Progress</h4>
+                    <p>Weekly completion trend</p>
+                  </div>
+                  <span class="chart-badge">Last 8 weeks</span>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="workoutProgressChart" height="160"></canvas>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Calories Burned</h4>
+                    <p>Daily burn last 7 days</p>
+                  </div>
+                  <span class="chart-badge chart-badge--accent">Calorie goal</span>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="caloriesBurnedChart" height="160"></canvas>
+                </div>
+              </article>
+            </div>
+
+            <div class="dashboard-analytics-side">
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Nutrition Overview</h4>
+                    <p>Macro balance</p>
+                  </div>
+                </div>
+                <div class="chart-canvas chart-canvas--center">
+                  <canvas id="nutritionDonutChart" height="200"></canvas>
+                </div>
+                <div class="macro-legend">
+                  <span><strong>Protein</strong> 38%</span>
+                  <span><strong>Carbs</strong> 42%</span>
+                  <span><strong>Fat</strong> 20%</span>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Weekly Activity</h4>
+                    <p>Consistency score</p>
+                  </div>
+                  <span class="chart-badge chart-badge--cool">6/7 days</span>
+                </div>
+                <ul class="weekly-activity">
+                  <li>
+                    <span>Mon</span>
+                    <span class="activity-bar"><span style="width: 86%"></span></span>
+                    <strong>86%</strong>
+                  </li>
+                  <li>
+                    <span>Tue</span>
+                    <span class="activity-bar"><span style="width: 72%"></span></span>
+                    <strong>72%</strong>
+                  </li>
+                  <li>
+                    <span>Wed</span>
+                    <span class="activity-bar"><span style="width: 64%"></span></span>
+                    <strong>64%</strong>
+                  </li>
+                  <li>
+                    <span>Thu</span>
+                    <span class="activity-bar"><span style="width: 78%"></span></span>
+                    <strong>78%</strong>
+                  </li>
+                  <li>
+                    <span>Fri</span>
+                    <span class="activity-bar"><span style="width: 92%"></span></span>
+                    <strong>92%</strong>
+                  </li>
+                  <li>
+                    <span>Sat</span>
+                    <span class="activity-bar"><span style="width: 58%"></span></span>
+                    <strong>58%</strong>
+                  </li>
+                  <li>
+                    <span>Sun</span>
+                    <span class="activity-bar"><span style="width: 70%"></span></span>
+                    <strong>70%</strong>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="workouts">
+        <div class="dashboard-section">
+          <header class="dashboard-overview__header">
+            <div>
+              <p class="dashboard-kicker">Training Focus</p>
+              <h2>Workout Plans</h2>
+              <p class="dashboard-subtitle">Personalized training with smart progression and guidance.</p>
+            </div>
+            <div class="dashboard-overview__actions">
+              <button class="button button--outline" type="button">Edit Plan</button>
+              <button class="button button--primary" type="button">Start Workout</button>
+            </div>
+          </header>
+
+          <div class="workout-tabs" role="tablist" aria-label="Workout filters">
+            <button class="workout-tab is-active" type="button" data-workout-tab="strength" aria-selected="true">Strength</button>
+            <button class="workout-tab" type="button" data-workout-tab="conditioning" aria-selected="false">Conditioning</button>
+            <button class="workout-tab" type="button" data-workout-tab="mobility" aria-selected="false">Mobility</button>
+          </div>
+
+          <div class="workout-grid">
+            <div class="workout-main">
+              <article class="dashboard-chart-card active-plan-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Active Plan</h4>
+                    <p>Strength Pro • 12-week cycle</p>
+                  </div>
+                  <span class="chart-badge">Week 5</span>
+                </div>
+                <div class="plan-meta">
+                  <div>
+                    <span>Duration</span>
+                    <strong>12 Weeks</strong>
+                  </div>
+                  <div>
+                    <span>Difficulty</span>
+                    <strong>Advanced</strong>
+                  </div>
+                  <div>
+                    <span>Next Session</span>
+                    <strong>Upper Body</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card workout-list-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Workout List</h4>
+                    <p>Exercises, sets, and reps</p>
+                  </div>
+                </div>
+                <div class="workout-list-panel is-active" data-workout-panel="strength">
+                  <ul class="workout-list">
+                    <li>
+                      <div>
+                        <strong>Bench Press</strong>
+                        <span>4 sets x 8 reps</span>
+                      </div>
+                      <span class="workout-tag">Chest</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Incline Dumbbell Press</strong>
+                        <span>3 sets x 10 reps</span>
+                      </div>
+                      <span class="workout-tag">Upper</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Seated Row</strong>
+                        <span>4 sets x 12 reps</span>
+                      </div>
+                      <span class="workout-tag">Back</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Lat Pulldown</strong>
+                        <span>3 sets x 10 reps</span>
+                      </div>
+                      <span class="workout-tag">Lats</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="workout-list-panel" data-workout-panel="conditioning">
+                  <ul class="workout-list">
+                    <li>
+                      <div>
+                        <strong>Rowing Sprint</strong>
+                        <span>6 rounds x 45 sec</span>
+                      </div>
+                      <span class="workout-tag">Cardio</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Battle Rope Slams</strong>
+                        <span>5 rounds x 30 sec</span>
+                      </div>
+                      <span class="workout-tag">Power</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Box Jumps</strong>
+                        <span>4 sets x 12 reps</span>
+                      </div>
+                      <span class="workout-tag">Explosive</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Assault Bike</strong>
+                        <span>10 min intervals</span>
+                      </div>
+                      <span class="workout-tag">HIIT</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="workout-list-panel" data-workout-panel="mobility">
+                  <ul class="workout-list">
+                    <li>
+                      <div>
+                        <strong>Thoracic Opener</strong>
+                        <span>3 sets x 60 sec</span>
+                      </div>
+                      <span class="workout-tag">Spine</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Hip Flow</strong>
+                        <span>4 sets x 45 sec</span>
+                      </div>
+                      <span class="workout-tag">Hips</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Hamstring Stretch</strong>
+                        <span>3 sets x 45 sec</span>
+                      </div>
+                      <span class="workout-tag">Legs</span>
+                    </li>
+                    <li>
+                      <div>
+                        <strong>Shoulder Mobility</strong>
+                        <span>3 sets x 12 reps</span>
+                      </div>
+                      <span class="workout-tag">Shoulders</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Strength Progress</h4>
+                    <p>Weekly load increase</p>
+                  </div>
+                  <span class="chart-badge chart-badge--cool">+9% this month</span>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="strengthProgressChart" height="170"></canvas>
+                </div>
+              </article>
+            </div>
+
+            <div class="workout-side">
+              <article class="dashboard-chart-card training-split-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Weekly Training Split</h4>
+                    <p>Intensity by day</p>
+                  </div>
+                </div>
+                <div class="weekly-split">
+                  <div class="split-day high">
+                    <span>Mon</span>
+                    <strong>Upper</strong>
+                  </div>
+                  <div class="split-day medium">
+                    <span>Tue</span>
+                    <strong>Conditioning</strong>
+                  </div>
+                  <div class="split-day high">
+                    <span>Wed</span>
+                    <strong>Lower</strong>
+                  </div>
+                  <div class="split-day low">
+                    <span>Thu</span>
+                    <strong>Mobility</strong>
+                  </div>
+                  <div class="split-day medium">
+                    <span>Fri</span>
+                    <strong>Full Body</strong>
+                  </div>
+                  <div class="split-day low">
+                    <span>Sat</span>
+                    <strong>Recovery</strong>
+                  </div>
+                  <div class="split-day off">
+                    <span>Sun</span>
+                    <strong>Rest</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card exercise-detail-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Exercise Detail</h4>
+                    <p>Muscle focus + timer</p>
+                  </div>
+                </div>
+                <div class="exercise-detail">
+                  <div>
+                    <span class="detail-label">Muscle Group</span>
+                    <strong>Chest &amp; Triceps</strong>
+                  </div>
+                  <p>Slow eccentric tempo with full range of motion. Keep your core engaged.</p>
+                  <div class="timer-ui">
+                    <div>
+                      <span class="detail-label">Interval</span>
+                      <strong class="timer-value">00:45</strong>
+                    </div>
+                    <div class="timer-controls">
+                      <button type="button" class="timer-btn">Start</button>
+                      <button type="button" class="timer-btn timer-btn--outline">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="nutrition">
+        <div class="dashboard-section">
+          <header class="dashboard-overview__header">
+            <div>
+              <p class="dashboard-kicker">Fuel &amp; Recovery</p>
+              <h2>Nutrition Tracker</h2>
+              <p class="dashboard-subtitle">Monitor calories, macros, and hydration targets.</p>
+            </div>
+            <div class="dashboard-overview__actions">
+              <button class="button button--outline" type="button">Log Meal</button>
+              <button class="button button--primary" type="button">Add Water</button>
+            </div>
+          </header>
+
+          <div class="nutrition-grid">
+            <div class="nutrition-main">
+              <article class="dashboard-chart-card calories-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Daily Calories</h4>
+                    <p>Consumed vs target</p>
+                  </div>
+                  <span class="chart-badge">2,180 / 2,500 kcal</span>
+                </div>
+                <div class="calorie-progress">
+                  <div class="progress-track">
+                    <span class="progress-fill" data-progress-fill data-progress="87"></span>
+                  </div>
+                  <div class="progress-meta">
+                    <span>Remaining</span>
+                    <strong>320 kcal</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card meal-log-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Meal Log</h4>
+                    <p>Today’s intake</p>
+                  </div>
+                </div>
+                <ul class="meal-log">
+                  <li>
+                    <div>
+                      <strong>Breakfast</strong>
+                      <span>Greek yogurt, berries, almonds</span>
+                    </div>
+                    <span class="meal-kcal">420 kcal</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Lunch</strong>
+                      <span>Grilled chicken, quinoa, greens</span>
+                    </div>
+                    <span class="meal-kcal">620 kcal</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Dinner</strong>
+                      <span>Salmon, sweet potato, salad</span>
+                    </div>
+                    <span class="meal-kcal">710 kcal</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Snacks</strong>
+                      <span>Protein shake + banana</span>
+                    </div>
+                    <span class="meal-kcal">430 kcal</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="nutrition-side">
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Macro Breakdown</h4>
+                    <p>Protein • Carbs • Fat</p>
+                  </div>
+                </div>
+                <div class="chart-canvas chart-canvas--center">
+                  <canvas id="nutritionMacroChart" height="200"></canvas>
+                </div>
+                <div class="macro-legend">
+                  <span><strong>Protein</strong> 38%</span>
+                  <span><strong>Carbs</strong> 42%</span>
+                  <span><strong>Fat</strong> 20%</span>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card macro-bars-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Macro Targets</h4>
+                    <p>Daily progress</p>
+                  </div>
+                </div>
+                <div class="macro-bars">
+                  <div>
+                    <div class="macro-label">
+                      <span>Protein</span>
+                      <strong>142g</strong>
+                    </div>
+                    <div class="progress-track">
+                      <span class="progress-fill" data-progress-fill data-progress="76"></span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="macro-label">
+                      <span>Carbs</span>
+                      <strong>210g</strong>
+                    </div>
+                    <div class="progress-track">
+                      <span class="progress-fill" data-progress-fill data-progress="64"></span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="macro-label">
+                      <span>Fat</span>
+                      <strong>58g</strong>
+                    </div>
+                    <div class="progress-track">
+                      <span class="progress-fill" data-progress-fill data-progress="52"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card hydration-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Hydration</h4>
+                    <p>Water intake</p>
+                  </div>
+                  <span class="chart-badge chart-badge--accent">6 / 8 cups</span>
+                </div>
+                <div class="hydration-progress">
+                  <div class="progress-track">
+                    <span class="progress-fill" data-progress-fill data-progress="75"></span>
+                  </div>
+                  <div class="hydration-glasses">
+                    <span class="glass is-full"></span>
+                    <span class="glass is-full"></span>
+                    <span class="glass is-full"></span>
+                    <span class="glass is-full"></span>
+                    <span class="glass is-full"></span>
+                    <span class="glass is-full"></span>
+                    <span class="glass"></span>
+                    <span class="glass"></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="progress">
+        <div class="dashboard-section">
+          <header class="dashboard-overview__header">
+            <div>
+              <p class="dashboard-kicker">Analytics</p>
+              <h2>Progress Analytics</h2>
+              <p class="dashboard-subtitle">Measure strength, weight, and performance trends.</p>
+            </div>
+            <div class="dashboard-overview__actions">
+              <button class="button button--outline" type="button">Compare</button>
+              <button class="button button--primary" type="button">New Assessment</button>
+            </div>
+          </header>
+
+          <div class="analytics-grid">
+            <div class="analytics-main">
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Weight Progress</h4>
+                    <p>Weekly check-ins</p>
+                  </div>
+                  <span class="chart-badge">-3.2 kg</span>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="weightProgressChart" height="170"></canvas>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Strength Progress</h4>
+                    <p>Bench, squat, deadlift</p>
+                  </div>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="strengthAnalyticsChart" height="170"></canvas>
+                </div>
+              </article>
+            </div>
+
+            <div class="analytics-side">
+              <div class="analytics-metrics">
+                <article class="metric-card">
+                  <span>Body Fat</span>
+                  <strong>18.4%</strong>
+                  <p>Down 1.2% this cycle</p>
+                </article>
+                <article class="metric-card">
+                  <span>Muscle Mass</span>
+                  <strong>52.7 kg</strong>
+                  <p>Up 0.8 kg this cycle</p>
+                </article>
+                <article class="metric-card goal-card">
+                  <span>Goal Completion</span>
+                  <div class="goal-ring" style="--progress:82">
+                    <strong>82%</strong>
+                  </div>
+                  <p>On track for April target</p>
+                </article>
+              </div>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Performance Trends</h4>
+                    <p>Energy vs recovery</p>
+                  </div>
+                </div>
+                <div class="chart-canvas">
+                  <canvas id="performanceTrendsChart" height="170"></canvas>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="schedule">
+        <div class="dashboard-section">
+          <header class="dashboard-overview__header">
+            <div>
+              <p class="dashboard-kicker">Planner</p>
+              <h2>Weekly Schedule</h2>
+              <p class="dashboard-subtitle">Plan sessions and manage intensity across the week.</p>
+            </div>
+            <div class="dashboard-overview__actions">
+              <button class="button button--outline" type="button">Reschedule</button>
+              <button class="button button--primary" type="button">Add Session</button>
+            </div>
+          </header>
+
+          <div class="schedule-grid">
+            <article class="dashboard-chart-card schedule-calendar">
+              <div class="chart-header">
+                <div>
+                  <h4>Weekly Planner</h4>
+                  <p>Mon – Sun</p>
+                </div>
+              </div>
+              <div class="schedule-days">
+                <button class="schedule-day is-active" type="button" data-schedule-day data-day="Monday" data-session="Upper Body Strength" data-duration="50 min" data-intensity="High" data-focus="Chest + Triceps">
+                  <span class="day-label">Mon</span>
+                  <span class="day-workout">Upper</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="86"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Tuesday" data-session="Conditioning Intervals" data-duration="40 min" data-intensity="Medium" data-focus="Cardio + Core">
+                  <span class="day-label">Tue</span>
+                  <span class="day-workout">HIIT</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="72"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Wednesday" data-session="Lower Body Strength" data-duration="55 min" data-intensity="High" data-focus="Legs + Glutes">
+                  <span class="day-label">Wed</span>
+                  <span class="day-workout">Lower</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="64"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Thursday" data-session="Mobility Flow" data-duration="35 min" data-intensity="Low" data-focus="Hips + Spine">
+                  <span class="day-label">Thu</span>
+                  <span class="day-workout">Mobility</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="78"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Friday" data-session="Full Body Power" data-duration="45 min" data-intensity="High" data-focus="Compound lifts">
+                  <span class="day-label">Fri</span>
+                  <span class="day-workout">Full</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="92"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Saturday" data-session="Recovery Session" data-duration="30 min" data-intensity="Low" data-focus="Stretch + Breath">
+                  <span class="day-label">Sat</span>
+                  <span class="day-workout">Recovery</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="58"></span>
+                  </span>
+                </button>
+                <button class="schedule-day" type="button" data-schedule-day data-day="Sunday" data-session="Active Rest" data-duration="20 min" data-intensity="Low" data-focus="Walk + Mobility">
+                  <span class="day-label">Sun</span>
+                  <span class="day-workout">Rest</span>
+                  <span class="day-progress">
+                    <span class="progress-fill" data-progress-fill data-progress="70"></span>
+                  </span>
+                </button>
+              </div>
+            </article>
+
+            <div class="schedule-side">
+              <article class="dashboard-chart-card schedule-detail-card">
+                <div class="chart-header">
+                  <div>
+                    <h4 data-schedule-title>Monday: Upper Body Strength</h4>
+                    <p data-schedule-focus>Chest + Triceps focus</p>
+                  </div>
+                  <span class="chart-badge chart-badge--accent" data-schedule-intensity>High</span>
+                </div>
+                <div class="schedule-meta">
+                  <div>
+                    <span>Duration</span>
+                    <strong data-schedule-duration>50 min</strong>
+                  </div>
+                  <div>
+                    <span>Session</span>
+                    <strong data-schedule-workout>Upper Body Strength</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dashboard-chart-card schedule-upcoming-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Upcoming Sessions</h4>
+                    <p>Next 7 days</p>
+                  </div>
+                </div>
+                <ul class="upcoming-sessions">
+                  <li>
+                    <div>
+                      <strong>Mobility Flow</strong>
+                      <span>Thu • 6:30 AM</span>
+                    </div>
+                    <span class="session-chip low">Low</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Full Body Power</strong>
+                      <span>Fri • 7:15 AM</span>
+                    </div>
+                    <span class="session-chip high">High</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Recovery Session</strong>
+                      <span>Sat • 9:00 AM</span>
+                    </div>
+                    <span class="session-chip low">Low</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="messages">
+        <h2>Coach Messages</h2>
+        <p>Check in with your coach and review feedback.</p>
+      </section>
+
+    </div>
+
+  </div>
+
+</div>
+  </body>
+</html>

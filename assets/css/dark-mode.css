@@ -1,0 +1,2002 @@
+body.dark-mode {
+    --bg-body: #f5f7fb;
+    --bg-soft: #edf2f7;
+    --panel-bg: rgba(255, 255, 255, 0.9);
+    --panel-strong: #ffffff;
+    --panel-subtle: #f3f6fb;
+    --text-primary: #0d1525;
+    --text-muted: #5f6f86;
+    --text-inverse: #ffffff;
+    --border-color: rgba(13, 21, 37, 0.1);
+    --accent-color: #2bbf6a;
+    --accent-color-strong: #1f8d4e;
+    --accent-color-alt: #20a861;
+    --shadow-soft: 0 18px 45px rgba(13, 21, 37, 0.08);
+    --shadow-header: 0 26px 70px rgba(13, 21, 37, 0.12);
+    color-scheme: light;
+    background:
+        radial-gradient(circle at top left, rgba(180, 255, 57, 0.1), transparent 24%),
+        radial-gradient(circle at right top, rgba(47, 214, 122, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg-body) 100%);
+}
+
+body.dark-mode .site-header.is-scrolled {
+    background: rgba(255, 255, 255, 0.82);
+    border-bottom-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .brand__copy strong,
+body.dark-mode .site-header:not(.is-scrolled) .brand__copy small,
+body.dark-mode .site-header:not(.is-scrolled) .nav-link,
+body.dark-mode .site-header:not(.is-scrolled) .nav-dropdown-toggle,
+body.dark-mode .site-header:not(.is-scrolled) .utility-button,
+body.dark-mode .site-header:not(.is-scrolled) .menu-button {
+    color: var(--text-primary);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .brand__mark,
+body.dark-mode .site-header:not(.is-scrolled) .utility-button,
+body.dark-mode .site-header:not(.is-scrolled) .menu-button {
+    background: rgba(255, 255, 255, 0.72);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 40px rgba(13, 21, 37, 0.1);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .brand__mark {
+    color: var(--text-primary);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .brand__copy small {
+    color: rgba(95, 111, 134, 0.92);
+}
+
+body.dark-mode .brand__mark,
+body.dark-mode .utility-button,
+body.dark-mode .menu-button,
+body.dark-mode .nav-panel,
+body.dark-mode .dropdown-menu,
+body.dark-mode .hero-card,
+body.dark-mode .hero-kpi,
+body.dark-mode .hero-progress-card,
+body.dark-mode .mini-panel,
+body.dark-mode .hero-trust__item,
+body.dark-mode .hero-card__score,
+body.dark-mode .hero-floating {
+    background: var(--panel-bg);
+}
+
+body.dark-mode .brand__mark {
+    color: var(--text-primary);
+    box-shadow: 0 18px 34px rgba(13, 21, 37, 0.1);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link:focus-visible,
+body.dark-mode .nav-dropdown-toggle:hover,
+body.dark-mode .nav-dropdown-toggle:focus-visible,
+body.dark-mode .has-dropdown.is-open > .nav-dropdown-toggle {
+    background: rgba(180, 255, 57, 0.1);
+    color: var(--accent-color);
+}
+
+body.dark-mode .dropdown-menu a:hover,
+body.dark-mode .dropdown-menu a:focus-visible {
+    background: rgba(180, 255, 57, 0.09);
+    color: var(--accent-color);
+}
+
+body.dark-mode .button--outline {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .button--outline:hover,
+body.dark-mode .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.1);
+    border-color: rgba(180, 255, 57, 0.35);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .header-cta .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .site-header:not(.is-scrolled) .header-cta .button--outline:hover,
+body.dark-mode .site-header:not(.is-scrolled) .header-cta .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.35);
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-section {
+    background-color: #f8fafc;
+}
+
+body.dark-mode .hero-section::before {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 42%, rgba(245, 247, 251, 0.96) 100%),
+        url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+}
+
+body.dark-mode .hero-section::after {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(141, 255, 47, 0.12), transparent 22%),
+        radial-gradient(circle at 82% 78%, rgba(75, 228, 255, 0.08), transparent 20%);
+}
+
+body.dark-mode .hero-title,
+body.dark-mode .hero-rating strong,
+body.dark-mode .hero-glass-card h2,
+body.dark-mode .scroll-indicator {
+    color: var(--text-primary);
+    text-shadow: none;
+}
+
+body.dark-mode .hero-copy,
+body.dark-mode .hero-rating,
+body.dark-mode .hero-glass-card p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .hero-section .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-section .button--outline:hover,
+body.dark-mode .hero-section .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.45);
+    color: var(--text-primary);
+}
+
+body.dark-mode .eyebrow {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.22);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .headline-accent {
+    color: #6dde18;
+}
+
+body.dark-mode .hero-glass-card {
+    background: rgba(255, 255, 255, 0.72);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 20px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .hero-glass-card:hover,
+body.dark-mode .hero-glass-card:focus-within {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(180, 255, 57, 0.34);
+}
+
+body.dark-mode .hero-glass-card__icon {
+    background: rgba(180, 255, 57, 0.14);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .scroll-indicator {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 40px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .avatar-stack img {
+    border-color: #ffffff;
+}
+
+body.dark-mode .stats-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.12), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .stats-section::before {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .stats-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .stats-section__heading h2,
+body.dark-mode .stats-section .stat-card__value,
+body.dark-mode .stats-section .stat-card__featured-value,
+body.dark-mode .stats-section .stat-card--featured h3,
+body.dark-mode .stats-section .progress-stat__top h3 {
+    color: var(--text-primary);
+}
+
+body.dark-mode .stats-section .section-kicker {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.22);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .stats-section .stat-card,
+body.dark-mode .stats-section .progress-stat {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .stats-section .stat-card:hover,
+body.dark-mode .stats-section .stat-card:focus-within {
+    border-color: rgba(180, 255, 57, 0.28);
+}
+
+body.dark-mode .stats-section__heading p,
+body.dark-mode .stats-section .stat-card__label,
+body.dark-mode .stats-section .stat-card--featured p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .stats-section .stat-card__eyebrow {
+    background: rgba(13, 21, 37, 0.05);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .stats-section .stat-card__icon {
+    background: rgba(180, 255, 57, 0.12);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .stats-section .progress-track,
+body.dark-mode .progress-bar {
+    background: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .transform-section,
+body.dark-mode .programs-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.1), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .transform-section::before,
+body.dark-mode .programs-section::before {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .transform-section::after,
+body.dark-mode .programs-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .transform-section__heading h2,
+body.dark-mode .programs-section__heading h2,
+body.dark-mode .transform-story-card h3,
+body.dark-mode .mini-metric-card strong,
+body.dark-mode .program-card__body h3,
+body.dark-mode .program-detail__copy h3,
+body.dark-mode .program-detail__duration {
+    color: var(--text-primary);
+}
+
+body.dark-mode .transform-section__heading p,
+body.dark-mode .programs-section__heading p,
+body.dark-mode .transform-story-card p,
+body.dark-mode .transform-story-card__list li,
+body.dark-mode .mini-metric-card span:last-child,
+body.dark-mode .program-card__body p,
+body.dark-mode .program-card__meta span:first-child,
+body.dark-mode .program-detail__copy p,
+body.dark-mode .program-detail__aside p,
+body.dark-mode .program-detail__features li {
+    color: var(--text-muted);
+}
+
+body.dark-mode .comparison-card,
+body.dark-mode .transform-story-card,
+body.dark-mode .mini-metric-card,
+body.dark-mode .program-tab,
+body.dark-mode .program-card__trigger,
+body.dark-mode .program-detail {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .comparison-stage {
+    background: #dfe7f1;
+}
+
+body.dark-mode .comparison-label,
+body.dark-mode .transform-gallery-card__overlay {
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--text-primary);
+    border-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .comparison-handle {
+    background: rgba(13, 21, 37, 0.3);
+}
+
+body.dark-mode .comparison-handle span {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 40px rgba(13, 21, 37, 0.12);
+}
+
+body.dark-mode .comparison-handle span::before,
+body.dark-mode .comparison-handle span::after {
+    border-color: var(--text-primary);
+}
+
+body.dark-mode .comparison-range::-webkit-slider-runnable-track,
+body.dark-mode .comparison-range::-moz-range-track {
+    background: rgba(13, 21, 37, 0.1);
+}
+
+body.dark-mode .transform-story-card__meta span,
+body.dark-mode .program-detail__aside,
+body.dark-mode .program-detail__duration,
+body.dark-mode .program-card__cta {
+    background: rgba(13, 21, 37, 0.05);
+    color: var(--text-primary);
+    border-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .transform-story-card__meta strong {
+    color: var(--text-primary);
+}
+
+body.dark-mode .transform-story-card__tag,
+body.dark-mode .program-detail__kicker,
+body.dark-mode .program-card__badge {
+    background: rgba(180, 255, 57, 0.12);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .mini-metric-card__icon,
+body.dark-mode .stat-card__icon,
+body.dark-mode .program-card__cta {
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .mini-metric-card__icon {
+    background: rgba(180, 255, 57, 0.12);
+}
+
+body.dark-mode .transform-story-card__list li::before,
+body.dark-mode .program-detail__features li::before {
+    background: var(--accent-color-strong);
+    box-shadow: 0 0 0 6px rgba(180, 255, 57, 0.12);
+}
+
+body.dark-mode .transform-gallery-card {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .transform-gallery-card__media::before,
+body.dark-mode .transform-gallery-card__media::after {
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--text-primary);
+}
+
+body.dark-mode .transform-gallery-card__overlay h3,
+body.dark-mode .transform-gallery-card__overlay p {
+    color: var(--text-primary);
+}
+
+body.dark-mode .program-tab {
+    color: var(--text-primary);
+}
+
+body.dark-mode .program-tab:hover,
+body.dark-mode .program-tab:focus-visible,
+body.dark-mode .program-tab.is-active {
+    color: #07110a;
+}
+
+body.dark-mode .program-card:hover .program-card__trigger,
+body.dark-mode .program-card:focus-within .program-card__trigger,
+body.dark-mode .program-card.is-active .program-card__trigger,
+body.dark-mode .transform-gallery-card:hover .transform-gallery-card__overlay,
+body.dark-mode .transform-gallery-card:focus-within .transform-gallery-card__overlay {
+    border-color: rgba(180, 255, 57, 0.24);
+}
+
+body.dark-mode .pricing-section,
+body.dark-mode .final-cta-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.1), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .pricing-section::before,
+body.dark-mode .final-cta-section::after {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .pricing-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .pricing-section__heading h2,
+body.dark-mode .pricing-card__price,
+body.dark-mode .pricing-table thead th,
+body.dark-mode .final-cta-shell h2 {
+    color: var(--text-primary);
+}
+
+body.dark-mode .pricing-section__heading p,
+body.dark-mode .pricing-card__plan,
+body.dark-mode .pricing-card__cycle,
+body.dark-mode .pricing-card__note,
+body.dark-mode .pricing-card__features li,
+body.dark-mode .pricing-table tbody th,
+body.dark-mode .pricing-table tbody td,
+body.dark-mode .final-cta-shell p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .pricing-toggle__button,
+body.dark-mode .pricing-card,
+body.dark-mode .pricing-comparison__wrap,
+body.dark-mode .final-cta-shell {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .pricing-toggle__button span,
+body.dark-mode .pricing-card__badge,
+body.dark-mode .pricing-card__features li::before {
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .pricing-card__badge,
+body.dark-mode .pricing-toggle__button span {
+    background: rgba(180, 255, 57, 0.12);
+}
+
+body.dark-mode .pricing-card .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .pricing-card .button--outline:hover,
+body.dark-mode .pricing-card .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.35);
+    color: var(--text-primary);
+}
+
+body.dark-mode .pricing-card__features li::before {
+    background: var(--accent-color-strong);
+    box-shadow: 0 0 0 6px rgba(180, 255, 57, 0.12);
+}
+
+body.dark-mode .pricing-card--featured {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.82)) padding-box,
+        linear-gradient(135deg, rgba(141, 255, 47, 0.72), rgba(75, 228, 255, 0.46)) border-box;
+}
+
+body.dark-mode .pricing-table thead th {
+    background: rgba(13, 21, 37, 0.04);
+}
+
+body.dark-mode .pricing-table th,
+body.dark-mode .pricing-table td {
+    border-bottom-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .pricing-table i.fa-minus {
+    color: rgba(13, 21, 37, 0.32);
+}
+
+body.dark-mode .final-cta-section::before {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(245, 247, 251, 0.94) 100%),
+        url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+}
+
+body.dark-mode .final-cta-shell {
+    text-align: center;
+}
+
+body.dark-mode .final-cta-shell .section-kicker {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.22);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .final-cta-shell .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .final-cta-shell .button--outline:hover,
+body.dark-mode .final-cta-shell .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.35);
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-alt-section,
+body.dark-mode .programs-spotlight-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.1), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .hero-alt-section::before {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(245, 247, 251, 0.94) 100%),
+        url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+    opacity: 0.7;
+}
+
+body.dark-mode .programs-spotlight-section::before,
+body.dark-mode .hero-alt-section::after {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .programs-spotlight-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .hero-alt-title,
+body.dark-mode .hero-alt-rating__text strong,
+body.dark-mode .dashboard-pill strong,
+body.dark-mode .floating-ui-card strong,
+body.dark-mode .programs-spotlight__heading h2 {
+    color: var(--text-primary);
+    text-shadow: none;
+}
+
+body.dark-mode .hero-alt-copy__text,
+body.dark-mode .hero-alt-rating__text,
+body.dark-mode .dashboard-pill__label,
+body.dark-mode .programs-spotlight__heading p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .hero-alt-badge,
+body.dark-mode .dashboard-pill,
+body.dark-mode .dashboard-graph,
+body.dark-mode .dashboard-mockup,
+body.dark-mode .floating-ui-card {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-alt-badge {
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-alt-badge i,
+body.dark-mode .floating-ui-card__icon {
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .hero-alt-section .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero-alt-section .button--outline:hover,
+body.dark-mode .hero-alt-section .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.35);
+    color: var(--text-primary);
+}
+
+body.dark-mode .floating-ui-card__label {
+    color: var(--text-muted);
+}
+
+body.dark-mode .floating-ui-card__bar {
+    background: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .program-card--alt .program-card__trigger,
+body.dark-mode .programs-spotlight__detail {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .program-card--alt .program-card__body h3,
+body.dark-mode .program-card--alt .program-card__meta span:first-child {
+    color: var(--text-primary);
+}
+
+body.dark-mode .program-card--alt .program-card__body p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .meal-plan-section,
+body.dark-mode .certifications-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.1), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .meal-plan-section::before,
+body.dark-mode .certifications-section::before {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .meal-plan-section::after,
+body.dark-mode .certifications-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .meal-plan__heading h2,
+body.dark-mode .certifications-section__heading h2,
+body.dark-mode .meal-card__body h3,
+body.dark-mode .nutrition-summary__hero strong,
+body.dark-mode .nutrition-metric__top h3,
+body.dark-mode .trainer-profile-card__body h3,
+body.dark-mode .cert-badge h3,
+body.dark-mode .timeline-milestone__year,
+body.dark-mode .timeline-milestone__content h3 {
+    color: var(--text-primary);
+}
+
+body.dark-mode .meal-plan__heading p,
+body.dark-mode .certifications-section__heading p,
+body.dark-mode .meal-card__body p,
+body.dark-mode .meal-card__stats span,
+body.dark-mode .nutrition-summary__hero p,
+body.dark-mode .trainer-profile-card__body p,
+body.dark-mode .trainer-profile-card__stats span,
+body.dark-mode .timeline-milestone__content p {
+    color: var(--text-muted);
+}
+
+body.dark-mode .meal-tab,
+body.dark-mode .meal-card,
+body.dark-mode .nutrition-summary,
+body.dark-mode .nutrition-metric,
+body.dark-mode .trainer-profile-card,
+body.dark-mode .cert-badge,
+body.dark-mode .achievements-timeline {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .meal-card__type,
+body.dark-mode .nutrition-summary__label,
+body.dark-mode .trainer-profile-card__role {
+    background: rgba(180, 255, 57, 0.12);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .meal-card__stats span,
+body.dark-mode .trainer-profile-card__stats span,
+body.dark-mode .timeline-milestone__year {
+    background: rgba(13, 21, 37, 0.05);
+}
+
+body.dark-mode .nutrition-metric__top span {
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .nutrition-metric__bar {
+    background: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .meal-tab {
+    color: var(--text-primary);
+}
+
+body.dark-mode .meal-tab:hover,
+body.dark-mode .meal-tab:focus-visible,
+body.dark-mode .meal-tab.is-active {
+    color: #07110a;
+}
+
+body.dark-mode .cert-badge__icon {
+    background: rgba(180, 255, 57, 0.12);
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .timeline-milestone__year::after {
+    box-shadow: 0 0 0 8px rgba(180, 255, 57, 0.12);
+}
+
+body.dark-mode .testimonials-section,
+body.dark-mode .conversion-cta-section {
+    background:
+        radial-gradient(circle at top left, rgba(141, 255, 47, 0.1), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75, 228, 255, 0.08), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+}
+
+body.dark-mode .testimonials-section::before,
+body.dark-mode .conversion-cta-section::before {
+    background: radial-gradient(circle, rgba(141, 255, 47, 0.12) 0%, rgba(141, 255, 47, 0) 72%);
+}
+
+body.dark-mode .testimonials-section::after,
+body.dark-mode .conversion-cta-section::after {
+    background: radial-gradient(circle, rgba(75, 228, 255, 0.1) 0%, rgba(75, 228, 255, 0) 72%);
+}
+
+body.dark-mode .testimonials-section__heading h2,
+body.dark-mode .featured-testimonial__body h3,
+body.dark-mode .reviews-slider__top h3,
+body.dark-mode .review-card__head h4,
+body.dark-mode .testimonial-metric strong,
+body.dark-mode .conversion-cta-shell h2,
+body.dark-mode .conversion-cta-shell__social strong {
+    color: var(--text-primary);
+}
+
+body.dark-mode .testimonials-section__heading p,
+body.dark-mode .featured-testimonial__body blockquote,
+body.dark-mode .review-card p,
+body.dark-mode .testimonial-metric span,
+body.dark-mode .conversion-cta-shell p,
+body.dark-mode .conversion-cta-shell__social p,
+body.dark-mode .conversion-cta-shell__trust span {
+    color: var(--text-muted);
+}
+
+body.dark-mode .featured-testimonial,
+body.dark-mode .reviews-slider,
+body.dark-mode .testimonial-metric,
+body.dark-mode .conversion-cta-shell {
+    background: rgba(255, 255, 255, 0.78);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 18px 45px rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .featured-testimonial__tag,
+body.dark-mode .reviews-slider__eyebrow,
+body.dark-mode .conversion-cta-shell__trust span i {
+    color: var(--accent-color-strong);
+}
+
+body.dark-mode .featured-testimonial__tag,
+body.dark-mode .reviews-slider__eyebrow,
+body.dark-mode .conversion-cta-shell .section-kicker,
+body.dark-mode .conversion-cta-shell__trust span {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .featured-testimonial__meta span,
+body.dark-mode .slider-control,
+body.dark-mode .review-card,
+body.dark-mode .conversion-cta-shell__trust span {
+    background: rgba(13, 21, 37, 0.05);
+    border-color: rgba(13, 21, 37, 0.08);
+}
+
+body.dark-mode .featured-testimonial__meta span,
+body.dark-mode .slider-control,
+body.dark-mode .review-card__head img,
+body.dark-mode .review-card__stars,
+body.dark-mode .conversion-cta-shell .button--outline {
+    color: var(--text-primary);
+}
+
+body.dark-mode .featured-testimonial__meta strong {
+    color: var(--text-primary);
+}
+
+body.dark-mode .slider-control:hover,
+body.dark-mode .slider-control:focus-visible,
+body.dark-mode .review-card:hover,
+body.dark-mode .review-card:focus-within {
+    border-color: rgba(180, 255, 57, 0.28);
+}
+
+body.dark-mode .slider-dot {
+    background: rgba(13, 21, 37, 0.18);
+}
+
+body.dark-mode .slider-dot.is-active {
+    background: var(--accent-color-strong);
+}
+
+body.dark-mode .featured-testimonial__play {
+    background: rgba(255, 255, 255, 0.86);
+    border-color: rgba(13, 21, 37, 0.08);
+    color: var(--text-primary);
+}
+
+body.dark-mode .conversion-cta-shell::before {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(245, 247, 251, 0.8)),
+        url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+}
+
+body.dark-mode .conversion-cta-shell::after {
+    background:
+        radial-gradient(circle at 18% 16%, rgba(180, 255, 57, 0.14), transparent 24%),
+        radial-gradient(circle at 82% 22%, rgba(75, 228, 255, 0.1), transparent 22%);
+}
+
+body.dark-mode .conversion-cta-shell .button--outline {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 37, 0.1);
+}
+
+body.dark-mode .conversion-cta-shell .button--outline:hover,
+body.dark-mode .conversion-cta-shell .button--outline:focus-visible {
+    background: rgba(180, 255, 57, 0.12);
+    border-color: rgba(180, 255, 57, 0.35);
+    color: var(--text-primary);
+}
+
+body.dark-mode .video-modal__backdrop {
+    background: rgba(13, 21, 37, 0.22);
+}
+
+body.dark-mode .video-modal__dialog {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(13, 21, 37, 0.08);
+    box-shadow: 0 28px 80px rgba(13, 21, 37, 0.16);
+}
+
+body.dark-mode .video-modal__close {
+    background: rgba(13, 21, 37, 0.05);
+    border-color: rgba(13, 21, 37, 0.08);
+    color: var(--text-primary);
+}
+
+body.dark-mode .nav-overlay {
+    background: rgba(13, 21, 37, 0.16);
+} 
+/* ========================================
+   ABOUT HERO DARK MODE
+======================================== */
+
+body.dark-mode .about-hero-section{
+background:
+radial-gradient(circle at 15% 20%, rgba(141,255,47,.10), transparent 30%),
+radial-gradient(circle at 85% 40%, rgba(75,228,255,.08), transparent 28%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+/* Headings */
+
+body.dark-mode .about-hero-content h1{
+color:var(--text-primary);
+}
+
+/* Paragraph */
+
+body.dark-mode .about-hero-text{
+color:var(--text-muted);
+}
+
+/* Certifications */
+
+body.dark-mode .about-certifications span{
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+}
+
+/* Widgets */
+
+body.dark-mode .about-widget{
+background:rgba(255,255,255,.75);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+/* Widget label */
+
+body.dark-mode .widget-title{
+color:var(--accent-color-strong);
+}
+
+/* Trainer image shadow */
+
+body.dark-mode .about-trainer-image{
+box-shadow:0 26px 60px rgba(13,21,37,.15);
+}
+/* ========================================
+   FOUNDER SECTION DARK MODE
+======================================== */
+
+body.dark-mode .founder-section{
+    background:
+        radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+        linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+/* Glass story container */
+
+body.dark-mode .founder-content{
+    background:rgba(255,255,255,.82);
+    border:1px solid var(--border-color);
+    box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+/* Headings */
+
+body.dark-mode .founder-content h2{
+    color:var(--text-primary);
+}
+
+/* Paragraphs */
+
+body.dark-mode .founder-story{
+    color:var(--text-muted);
+}
+
+/* Signature */
+
+body.dark-mode .founder-signature{
+    color:var(--accent-color-strong);
+}
+
+/* Credential badges */
+
+body.dark-mode .credential-card{
+    background:rgba(13,21,37,.05);
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+}
+
+body.dark-mode .credential-card i{
+    color:var(--accent-color);
+}
+
+/* Image shadow */
+
+body.dark-mode .founder-image{
+    box-shadow:0 26px 60px rgba(13,21,37,.15);
+}
+/* ========================================
+   MISSION SECTION DARK MODE
+======================================== */
+
+body.dark-mode .mission-section{
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 28%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .mission-card{
+background:rgba(255,255,255,.8);
+border:1px solid var(--border-color);
+box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+body.dark-mode .mission-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .mission-card p{
+color:var(--text-muted);
+}
+
+body.dark-mode .mission-icon{
+background:rgba(13,21,37,.05);
+}
+/* ========================================
+   METHOD SECTION DARK MODE
+======================================== */
+
+body.dark-mode .method-section{
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 28%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .method-step{
+background:rgba(255,255,255,.8);
+border:1px solid var(--border-color);
+box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+body.dark-mode .method-step h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .method-step p{
+color:var(--text-muted);
+}
+body.dark-mode .section-kicker{
+    background: rgba(180,255,57,0.12);
+    border: 1px solid rgba(180,255,57,0.22);
+    color: var(--accent-color-strong);
+}
+body.dark-mode .section-heading h2{
+    color: var(--text-primary);
+}
+
+body.dark-mode .section-heading p{
+    color: var(--text-muted);
+}
+/* ========================================
+   TIMELINE DARK MODE
+======================================== */
+
+body.dark-mode .timeline-section{
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 28%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .timeline-content{
+background:rgba(255,255,255,.82);
+border:1px solid var(--border-color);
+box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+body.dark-mode .timeline-content h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .timeline-content p{
+color:var(--text-muted);
+}
+body.dark-mode .gallery-section{
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 28%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .gallery-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .gallery-heading p{
+color:var(--text-muted);
+}
+/* ========================================
+   CTA DARK MODE
+======================================== */
+
+body.dark-mode .cta-section{
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 30%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 26%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .cta-shell{
+background:rgba(255,255,255,.82);
+border:1px solid var(--border-color);
+box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+body.dark-mode .cta-shell h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .cta-shell p{
+color:var(--text-muted);
+}
+
+body.dark-mode .cta-trust span{
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+}
+body.dark-mode .workout-hero-v2{
+background:
+radial-gradient(circle at top, rgba(141,255,47,.10), transparent 30%),
+radial-gradient(circle at bottom, rgba(75,228,255,.08), transparent 26%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .workout-hero-header h1{
+color:var(--text-primary);
+}
+
+body.dark-mode .workout-hero-header p{
+color:var(--text-muted);
+}
+
+body.dark-mode .workout-dashboard{
+background:rgba(255,255,255,.85);
+border:1px solid var(--border-color);
+}
+
+body.dark-mode .dashboard-card{
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+}
+
+body.dark-mode .dashboard-progress{
+color:var(--text-primary);
+}
+
+body.dark-mode .workout-programs-section{
+    background:
+        radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 20%),
+        linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+body.dark-mode .workout-programs-heading h2{
+    color:var(--text-primary);
+}
+
+body.dark-mode .workout-programs-heading p{
+    color:var(--text-muted);
+}
+
+body.dark-mode .workout-program-card{
+    background:rgba(255,255,255,.9);
+    border:1px solid var(--border-color);
+    box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+body.dark-mode .workout-program-card h3{
+    color:var(--text-primary);
+}
+
+body.dark-mode .workout-program-card p,
+body.dark-mode .program-meta li{
+    color:var(--text-muted);
+}
+
+body.dark-mode .program-meta strong{
+    color:var(--text-primary);
+}
+/* ========================================
+   PROGRAM SELECTOR DARK MODE
+======================================== */
+
+body.dark-mode .program-selector-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 20%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+
+/* heading */
+
+body.dark-mode .program-selector-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .program-selector-heading p{
+color:var(--text-muted);
+}
+
+
+/* tabs */
+
+body.dark-mode .program-tab{
+
+background:rgba(255,255,255,.85);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+
+}
+
+body.dark-mode .program-tab.is-active{
+
+background:linear-gradient(
+135deg,
+var(--accent-color),
+var(--accent-color-alt)
+);
+
+color:#07110a;
+
+}
+
+
+/* cards */
+
+body.dark-mode .program-panel-card{
+
+background:rgba(255,255,255,.92);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .program-panel-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .program-panel-card p{
+color:var(--text-muted);
+}
+/* ========================================
+   WEEKLY PLANNER DARK MODE
+======================================== */
+
+body.dark-mode .weekly-planner-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 18%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .planner-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .planner-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .planner-day-card{
+
+background:rgba(255,255,255,.9);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .planner-day-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .planner-meta{
+color:var(--text-muted);
+}
+/* ========================================
+   BENEFITS DARK MODE
+======================================== */
+
+body.dark-mode .program-benefits-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 18%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .benefits-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .benefits-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .benefit-card{
+
+background:rgba(255,255,255,.92);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .benefit-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .benefit-card p{
+color:var(--text-muted);
+}
+/* ========================================
+   CTA DARK MODE
+======================================== */
+
+body.dark-mode .conversion-cta-section{
+
+background:
+radial-gradient(circle at 20% 20%, rgba(141,255,47,.10), transparent 28%),
+radial-gradient(circle at 80% 30%, rgba(75,228,255,.08), transparent 26%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .conversion-cta-shell{
+
+background:rgba(255,255,255,.9);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .conversion-cta-shell h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .conversion-cta-shell p{
+color:var(--text-muted);
+}
+
+body.dark-mode .conversion-cta-shell__trust span{
+
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+
+}
+/* ========================================
+   NUTRITION HERO DARK MODE
+======================================== */
+
+body.dark-mode .nutrition-hero-section{
+
+background:
+radial-gradient(circle at 20% 20%, rgba(141,255,47,.10), transparent 26%),
+radial-gradient(circle at 80% 25%, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .nutrition-hero-header h1{
+color:var(--text-primary);
+}
+
+body.dark-mode .nutrition-hero-header p{
+color:var(--text-muted);
+}
+
+body.dark-mode .nutrition-dashboard{
+
+background:rgba(255,255,255,.9);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .nutrition-dashboard h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .macro-bar span{
+color:var(--text-primary);
+}
+
+body.dark-mode .nutrition-calories{
+color:var(--text-primary);
+}
+/* ========================================
+   NUTRITION BENEFITS DARK MODE
+======================================== */
+
+body.dark-mode .nutrition-benefits-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .nutrition-benefits-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .nutrition-benefits-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .nutrition-benefit-card{
+
+background:rgba(255,255,255,.92);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .nutrition-benefit-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .nutrition-benefit-card p{
+color:var(--text-muted);
+}
+body.dark-mode .meal-plan-preview-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .meal-plan-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .meal-plan-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .meal-card{
+
+background:rgba(255,255,255,.9);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .meal-card h3,
+body.dark-mode .meal-calories{
+color:var(--text-primary);
+}
+
+body.dark-mode .meal-name,
+body.dark-mode .macro-bar span{
+color:var(--text-muted);
+}
+/* ========================================
+   NUTRITION TRACKING DARK MODE
+======================================== */
+
+body.dark-mode .nutrition-tracking-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .nutrition-tracking-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .nutrition-tracking-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .macro-summary-card,
+body.dark-mode .macro-progress-panel{
+
+background:rgba(255,255,255,.92);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .macro-summary-card h3,
+body.dark-mode .macro-header{
+color:var(--text-primary);
+}
+
+body.dark-mode .calorie-target{
+color:var(--text-muted);
+}
+/* ========================================
+   PRICING HERO DARK MODE (FIXED)
+======================================== */
+
+body.dark-mode .pricing-hero-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 18%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+/* heading */
+
+body.dark-mode .pricing-hero-header h1{
+color:var(--text-primary);
+}
+
+body.dark-mode .pricing-hero-header p{
+color:var(--text-muted);
+}
+
+/* preview cards */
+
+body.dark-mode .pricing-preview-card{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+/* card text */
+
+body.dark-mode .pricing-preview-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .pricing-preview-card p{
+color:var(--text-muted);
+}
+
+/* featured card */
+
+body.dark-mode .pricing-preview-card--featured{
+border-color:rgba(180,255,57,.35);
+box-shadow:0 20px 50px rgba(13,21,37,.12);
+}
+/* ========================================
+   PRICING CTA DARK MODE
+======================================== */
+
+body.dark-mode .pricing-cta-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 18%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .pricing-cta-shell{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .pricing-cta-shell h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .pricing-cta-shell p{
+color:var(--text-muted);
+}
+
+body.dark-mode .cta-trust-item{
+
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+
+}
+/* BLOG HERO DARK MODE */
+
+body.dark-mode .blog-hero-section{
+
+background:
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .blog-hero h1{
+color:var(--text-primary);
+}
+
+body.dark-mode .blog-hero p{
+color:var(--text-muted);
+}
+
+body.dark-mode .blog-search{
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+}
+
+body.dark-mode .blog-category{
+background:rgba(13,21,37,.05);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+}
+/* ========================================
+   FEATURED ARTICLES DARK MODE FIX
+======================================== */
+
+body.dark-mode .featured-articles-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+/* cards */
+
+body.dark-mode .featured-blog-card{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+/* title */
+
+body.dark-mode .blog-card-content h3{
+color:var(--text-primary);
+}
+
+/* description */
+
+body.dark-mode .blog-card-content p{
+color:var(--text-muted);
+}
+
+/* meta */
+
+body.dark-mode .blog-meta{
+color:var(--text-muted);
+}
+
+/* read more */
+
+body.dark-mode .blog-read-more{
+color:var(--accent-color);
+}
+
+/* overlay adjust */
+
+body.dark-mode .blog-overlay{
+
+background:linear-gradient(
+180deg,
+rgba(255,255,255,.05),
+rgba(0,0,0,.15)
+);
+
+}
+/* ========================================
+   BLOG GRID DARK MODE
+======================================== */
+
+body.dark-mode .blog-grid-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .blog-grid-heading h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .blog-grid-heading p{
+color:var(--text-muted);
+}
+
+body.dark-mode .blog-card{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .blog-card-body h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .blog-card-body p,
+body.dark-mode .blog-card-meta{
+color:var(--text-muted);
+}
+/* ========================================
+   TRENDING ARTICLES DARK MODE
+======================================== */
+
+body.dark-mode .trending-articles-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .trending-featured,
+body.dark-mode .trending-item{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .trending-content h3,
+body.dark-mode .trending-item-content h4{
+color:var(--text-primary);
+}
+
+body.dark-mode .trending-content p,
+body.dark-mode .trending-meta{
+color:var(--text-muted);
+}
+/* ========================================
+   CONTACT HERO DARK MODE
+======================================== */
+
+body.dark-mode .contact-hero-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .contact-hero-shell{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .contact-hero-shell h1{
+color:var(--text-primary);
+}
+
+body.dark-mode .contact-hero-text{
+color:var(--text-muted);
+}
+/* ========================================
+   CONTACT INFO DARK MODE
+======================================== */
+
+body.dark-mode .contact-info-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .contact-card{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .contact-card h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .contact-card p{
+color:var(--text-muted);
+}
+/* ========================================
+   CONTACT FORM DARK MODE
+======================================== */
+
+body.dark-mode .contact-form-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .contact-form-shell{
+
+background:var(--panel-bg);
+border:1px solid var(--border-color);
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .contact-form-shell h2,
+body.dark-mode .contact-side-content h3{
+color:var(--text-primary);
+}
+
+body.dark-mode .contact-side-content p{
+color:var(--text-muted);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form select,
+body.dark-mode .contact-form textarea{
+
+background:rgba(255,255,255,.9);
+border:1px solid var(--border-color);
+color:var(--text-primary);
+
+}
+
+body.dark-mode .form-group label{
+color:var(--text-muted);
+}
+/* ========================================
+   STUDIO LOCATION DARK MODE
+======================================== */
+
+body.dark-mode .studio-location-section{
+
+background:
+radial-gradient(circle at top left, rgba(141,255,47,.08), transparent 26%),
+radial-gradient(circle at bottom right, rgba(75,228,255,.06), transparent 24%),
+linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+
+}
+
+body.dark-mode .studio-info{
+
+background:var(--panel-bg);
+
+border:1px solid var(--border-color);
+
+box-shadow:var(--shadow-soft);
+
+}
+
+body.dark-mode .studio-info h2{
+color:var(--text-primary);
+}
+
+body.dark-mode .studio-info p,
+body.dark-mode .studio-address span{
+color:var(--text-muted);
+}
+
+body.dark-mode .studio-address strong{
+color:var(--text-primary);
+}
+
+/* ========================================
+   FOOTER DARK MODE
+======================================== */
+
+body.dark-mode .site-footer{
+    background:
+        radial-gradient(circle at top left, rgba(141,255,47,.10), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(75,228,255,.08), transparent 18%),
+        linear-gradient(180deg,#ffffff 0%,#f5f7fb 100%);
+}
+
+/* Glass container */
+
+body.dark-mode .footer-shell{
+    background: rgba(255,255,255,.78);
+    border:1px solid var(--border-color);
+    box-shadow:0 18px 45px rgba(13,21,37,.08);
+}
+
+/* Headings */
+
+body.dark-mode #footer-title,
+body.dark-mode .footer-brand .brand__copy strong{
+    color:var(--text-primary);
+}
+
+/* Muted text */
+
+body.dark-mode .footer-brand p,
+body.dark-mode .footer-newsletter__content p,
+body.dark-mode .footer-bottom p,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-legal a,
+body.dark-mode .footer-contact li,
+body.dark-mode .footer-brand .brand__copy small{
+    color:var(--text-muted);
+}
+
+/* Link hover */
+
+body.dark-mode .footer-links a:hover,
+body.dark-mode .footer-legal a:hover{
+    color:var(--accent-color);
+}
+
+/* Newsletter input */
+
+body.dark-mode .footer-newsletter input{
+    background:rgba(255,255,255,.82);
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+}
+
+/* Newsletter button */
+
+body.dark-mode .footer-newsletter button{
+    background:var(--accent-color);
+    color:#07110a;
+}
+
+/* Social icons */
+
+body.dark-mode .footer-social a{
+    background:rgba(13,21,37,.05);
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+}
+
+body.dark-mode .footer-social a:hover{
+    background:rgba(180,255,57,.12);
+    color:var(--accent-color-strong);
+}
+
+/* Brand icon */
+
+body.dark-mode .footer-brand .brand__mark{
+    background:var(--panel-bg);
+    border:1px solid var(--border-color);
+    color:var(--accent-color-strong);
+    box-shadow:0 18px 34px rgba(13,21,37,.1);
+}
+
+/* Trust badges */
+
+body.dark-mode .footer-trust span{
+    background:rgba(13,21,37,.05);
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:13px;
+}
+
+/* Footer bottom */
+
+body.dark-mode .footer-bottom{
+    border-top:1px solid var(--border-color);
+}
+body.dark-mode .site-header{
+background:rgba(5,9,16,0.9);
+}
+
+body.dark-mode .dashboard-sidebar{
+background:
+linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+}
+
+body.dark-mode .utility-button{
+background:rgba(255,255,255,0.06);
+color:var(--text-primary);
+}
+
+body.dark-mode.dashboard-page .site-header{
+background:rgba(255,255,255,0.82);
+border-bottom:1px solid rgba(13,21,37,0.08);
+}
+
+body.dark-mode .notification-dropdown{
+background:rgba(255,255,255,0.86);
+border:1px solid rgba(13,21,37,0.1);
+box-shadow:0 30px 80px rgba(13,21,37,0.18);
+}
+
+body.dark-mode .notification-dropdown__header,
+body.dark-mode .notification-dropdown__footer{
+border-color:rgba(13,21,37,0.08);
+}
+
+body.dark-mode .notification-item__button{
+background:rgba(13,21,37,0.04);
+}
+
+body.dark-mode .notification-item__button:hover{
+background:rgba(180,255,57,0.12);
+border-color:rgba(180,255,57,0.3);
+}
+
+body.dark-mode .notification-item.is-unread .notification-item__button{
+background:rgba(180,255,57,0.16);
+}
+
+body.dark-mode .notification-dot{
+box-shadow:0 0 0 4px rgba(180,255,57,0.2);
+}

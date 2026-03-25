@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium fitness trainer website header with responsive navigation, dark mode, RTL support, and a high-end hero section."
+    />
+    <title>PulseForge Fitness | Home Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container">
+        <nav class="navbar" aria-label="Primary navigation">
+          <a
+            class="brand"
+            href="HomePage-1.html"
+            aria-label="PulseForge Fitness home"
+          >
+            <span class="brand__mark">
+              <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+            </span>
+            <span class="brand__copy">
+              <strong>PulseForge</strong>
+              <small>Performance Coaching</small>
+            </span>
+          </a>
+
+          <div class="nav-panel" id="site-navigation" data-nav-panel>
+            <ul class="nav-menu">
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Home</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="HomePage-1.html">Home Page 1</a>
+                    <a href="HomePage-2.html">Home Page 2</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Programs</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="WorkoutPlans.html">Workout Plans</a>
+                    <a href="Nutrition Coaching.html">Nutrition Coaching</a>
+                    <a href="pricing.html">Pricing Plans</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Dashboard</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="clientdashboard.html">Client Dashboard</a>
+                    <a href="Admindashboard.html">Admin Dashboard</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-tools">
+            <button
+              class="utility-button"
+              type="button"
+              data-rtl-toggle
+              aria-label="Toggle RTL direction"
+            >
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            </button>
+            <button
+              class="utility-button"
+              type="button"
+              data-theme-toggle
+              aria-label="Toggle dark mode"
+            >
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <div class="header-cta">
+              <a class="button button--outline" href="login.html">Login</a>
+              <a class="button button--primary" href="Booking.html">Book Now</a>
+            </div>
+            <button
+              class="menu-button"
+              type="button"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Open menu"
+            >
+              <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <main id="main-content">
+      <section
+        class="pricing-hero-section"
+        aria-labelledby="pricing-hero-title"
+      >
+        <div class="container">
+          <div class="pricing-hero-header reveal" data-reveal>
+            <span class="pricing-badge">Transparent Pricing</span>
+
+            <h1 id="pricing-hero-title">
+              Flexible Coaching Plans Built for Your Goals
+            </h1>
+
+            <p>
+              Choose a coaching plan that matches your training level, schedule,
+              and long-term fitness goals.
+            </p>
+
+            <div class="pricing-hero-actions">
+              <a href="#plans" class="button button--primary"> View Plans </a>
+
+              <a href="#contact" class="button button--outline">
+                Start Training
+              </a>
+            </div>
+          </div>
+
+          <div class="pricing-preview-grid reveal" data-reveal>
+            <div class="pricing-preview-card">
+              <i class="fa-solid fa-dumbbell"></i>
+
+              <h3>Workout Coaching</h3>
+
+              <p>
+                Personalized strength programs and weekly performance tracking.
+              </p>
+            </div>
+
+            <div class="pricing-preview-card pricing-preview-card--featured">
+              <i class="fa-solid fa-bolt"></i>
+
+              <h3>Complete Transformation</h3>
+
+              <p>
+                Workout + nutrition coaching with full accountability support.
+              </p>
+            </div>
+
+            <div class="pricing-preview-card">
+              <i class="fa-solid fa-apple-whole"></i>
+
+              <h3>Nutrition Coaching</h3>
+
+              <p>Macro tracking, meal plans, and nutrition habit coaching.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing-section" aria-labelledby="pricing-title">
+        <div class="container">
+          <div
+            class="section-heading pricing-section__heading reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">Simple Coaching Plans</span>
+            <h2 id="pricing-title">Simple Coaching Plans</h2>
+            <p>
+              Every plan includes structured programming, dashboard access, and
+              measurable progress tracking. Switch between monthly and yearly
+              billing to see the best fit for your commitment window.
+            </p>
+          </div>
+
+          <div
+            class="pricing-toggle reveal"
+            data-reveal
+            style="--delay: 0.14s"
+            role="group"
+            aria-label="Billing frequency"
+          >
+            <button
+              class="pricing-toggle__button is-active"
+              type="button"
+              data-billing-toggle="monthly"
+              aria-pressed="true"
+            >
+              Monthly
+            </button>
+            <button
+              class="pricing-toggle__button"
+              type="button"
+              data-billing-toggle="yearly"
+              aria-pressed="false"
+            >
+              Yearly
+              <span>Save 20%</span>
+            </button>
+          </div>
+
+          <div class="pricing-grid">
+            <article
+              class="pricing-card reveal"
+              data-reveal
+              style="--delay: 0.18s"
+            >
+              <span class="pricing-card__plan">Basic</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <strong
+                  class="pricing-card__amount"
+                  data-price-amount
+                  data-monthly="59"
+                  data-yearly="47"
+                  >59</strong
+                >
+                <span class="pricing-card__cycle">/mo</span>
+              </div>
+              <p
+                class="pricing-card__note"
+                data-price-note
+                data-monthly-note="Perfect for steady progress with monthly flexibility."
+                data-yearly-note="Billed yearly for $564 total. Best for long-term consistency."
+              >
+                Perfect for steady progress with monthly flexibility.
+              </p>
+              <ul class="pricing-card__features">
+                <li>Custom 4-day training split</li>
+                <li>Monthly macro adjustments</li>
+                <li>Progress dashboard access</li>
+                <li>One check-in call each month</li>
+              </ul>
+              <a class="button button--outline" href="pricing.html"
+                >Choose Basic</a
+              >
+            </article>
+
+            <article
+              class="pricing-card pricing-card--featured reveal"
+              data-reveal
+              style="--delay: 0.24s"
+            >
+              <span class="pricing-card__badge">Most Popular</span>
+              <span class="pricing-card__plan">Pro</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <strong
+                  class="pricing-card__amount"
+                  data-price-amount
+                  data-monthly="89"
+                  data-yearly="71"
+                  >89</strong
+                >
+                <span class="pricing-card__cycle">/mo</span>
+              </div>
+              <p
+                class="pricing-card__note"
+                data-price-note
+                data-monthly-note="Weekly accountability with deeper nutrition support."
+                data-yearly-note="Billed yearly for $852 total. Strongest value for full coaching."
+              >
+                Weekly accountability with deeper nutrition support.
+              </p>
+              <ul class="pricing-card__features">
+                <li>Custom training and cardio phases</li>
+                <li>Weekly check-ins and feedback</li>
+                <li>Macro coaching and meal structure</li>
+                <li>Video form review and dashboard support</li>
+              </ul>
+              <a class="button button--primary" href="Booking.html"
+                >Start Pro Coaching</a
+              >
+            </article>
+
+            <article
+              class="pricing-card reveal"
+              data-reveal
+              style="--delay: 0.3s"
+            >
+              <span class="pricing-card__plan">Elite</span>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <strong
+                  class="pricing-card__amount"
+                  data-price-amount
+                  data-monthly="149"
+                  data-yearly="119"
+                  >149</strong
+                >
+                <span class="pricing-card__cycle">/mo</span>
+              </div>
+              <p
+                class="pricing-card__note"
+                data-price-note
+                data-monthly-note="High-touch coaching for advanced body recomposition goals."
+                data-yearly-note="Billed yearly for $1428 total. Premium support with maximum accountability."
+              >
+                High-touch coaching for advanced body recomposition goals.
+              </p>
+              <ul class="pricing-card__features">
+                <li>Weekly strategy calls and direct support</li>
+                <li>Advanced nutrition periodization</li>
+                <li>Priority plan adjustments and reviews</li>
+                <li>Supplement and recovery protocol guidance</li>
+              </ul>
+              <a class="button button--outline" href="Booking.html"
+                >Apply for Elite</a
+              >
+            </article>
+          </div>
+
+          <div
+            class="pricing-comparison reveal"
+            data-reveal
+            style="--delay: 0.36s"
+          >
+            <div class="pricing-comparison__wrap">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Pro</th>
+                    <th scope="col">Elite</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Workout Program Updates</th>
+                    <td>Monthly</td>
+                    <td>Bi-weekly</td>
+                    <td>Weekly</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nutrition Coaching</th>
+                    <td>Essential</td>
+                    <td>Advanced</td>
+                    <td>Elite</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Check-ins</th>
+                    <td>1 / month</td>
+                    <td>1 / week</td>
+                    <td>2 / week</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Form Review</th>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority Messaging Support</th>
+                    <td>
+                      <i class="fa-solid fa-minus" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Custom Supplement Guidance</th>
+                    <td>
+                      <i class="fa-solid fa-minus" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-minus" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing-cta-section" aria-labelledby="pricing-cta-title">
+        <div class="container">
+          <div class="pricing-cta-shell reveal" data-reveal>
+            <div class="pricing-cta-content">
+              <h2 id="pricing-cta-title">Start Your Transformation Today</h2>
+
+              <p>
+                Join hundreds of clients who improved their strength, health,
+                and confidence through structured coaching.
+              </p>
+
+              <div class="pricing-cta-actions">
+                <a href="#start-training" class="button button--primary">
+                  Start Training
+                </a>
+
+                <a href="#consultation" class="button button--outline">
+                  Book Free Consultation
+                </a>
+              </div>
+
+              <div class="pricing-cta-trust">
+                <span class="cta-trust-item">
+                  <i class="fa-solid fa-star"></i>
+                  <strong>4.9</strong> Client Rating
+                </span>
+
+                <span class="cta-trust-item">
+                  <i class="fa-solid fa-fire"></i>
+                  <strong>500+</strong> Transformations
+                </span>
+
+                <span class="cta-trust-item">
+                  <i class="fa-solid fa-users"></i>
+                  <strong>1200+</strong> Clients Trained
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <!-- Newsletter -->
+      <section class="footer-newsletter">
+        <div class="container footer-newsletter__inner">
+          <div class="footer-newsletter__content">
+            <h2 id="footer-title">Get Fitness Tips & Weekly Workouts</h2>
+            <p>
+              Join thousands of members receiving training tips, nutrition
+              guides, and motivation.
+            </p>
+          </div>
+
+          <form class="newsletter-form" action="#">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button class="button button--primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a
+              class="brand"
+              href="HomePage-2.html"
+              aria-label="PulseForge Fitness home"
+            >
+              <span class="brand__mark">
+                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+              </span>
+              <span class="brand__copy">
+                <strong>PulseForge</strong>
+                <small>Performance Coaching</small>
+              </span>
+            </a>
+            <p>
+              Helping people transform their bodies through structured training,
+              nutrition coaching, and sustainable habits.
+            </p>
+
+            <div class="footer-trust">
+              <span>✔ Certified Trainer</span>
+              <span>✔ Proven Programs</span>
+              <span>✔ 1200+ Clients</span>
+            </div>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Programs -->
+          <nav class="footer-links">
+            <h3>Programs</h3>
+            <ul>
+              <li><a href="#">Weight Loss Program</a></li>
+              <li><a href="#">Muscle Building</a></li>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Online Coaching</a></li>
+              <li><a href="#">Nutrition Coaching</a></li>
+            </ul>
+          </nav>
+
+          <!-- Quick Links -->
+          <nav class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Resources -->
+          <nav class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Workout Library</a></li>
+              <li><a href="#">Meal Plans</a></li>
+              <li><a href="#">Fitness Calculator</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: coach@fitcoach.com</li>
+              <li>Phone: +1 (234) 567-890</li>
+              <li>Location: Los Angeles, CA</li>
+              <li>Mon-Fri: 8am – 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <p>© 2026 FitCoach. All rights reserved.</p>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

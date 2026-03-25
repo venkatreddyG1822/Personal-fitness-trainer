@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium fitness trainer website header with responsive navigation, dark mode, RTL support, and a high-end hero section."
+    />
+    <title>PulseForge Fitness | Home Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container">
+        <nav class="navbar" aria-label="Primary navigation">
+          <a
+            class="brand"
+            href="HomePage-1.html"
+            aria-label="PulseForge Fitness home"
+          >
+            <span class="brand__mark">
+              <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+            </span>
+            <span class="brand__copy">
+              <strong>PulseForge</strong>
+              <small>Performance Coaching</small>
+            </span>
+          </a>
+
+          <div class="nav-panel" id="site-navigation" data-nav-panel>
+            <ul class="nav-menu">
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Home</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="HomePage-1.html">Home Page 1</a>
+                    <a href="HomePage-2.html">Home Page 2</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Programs</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="WorkoutPlans.html">Workout Plans</a>
+                    <a href="Nutrition Coaching.html">Nutrition Coaching</a>
+                    <a href="pricing.html">Pricing Plans</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Dashboard</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="clientdashboard.html">Client Dashboard</a>
+                    <a href="Admindashboard.html">Admin Dashboard</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-tools">
+            <button
+              class="utility-button"
+              type="button"
+              data-rtl-toggle
+              aria-label="Toggle RTL direction"
+            >
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            </button>
+            <button
+              class="utility-button"
+              type="button"
+              data-theme-toggle
+              aria-label="Toggle dark mode"
+            >
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <div class="header-cta">
+              <a class="button button--outline" href="login.html">Login</a>
+              <a class="button button--primary" href="Booking.html">Book Now</a>
+            </div>
+            <button
+              class="menu-button"
+              type="button"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Open menu"
+            >
+              <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <main id="main-content">
+      <section class="about-hero-section" aria-labelledby="about-hero-title">
+        <div class="container about-hero-grid">
+          <!-- Left Content -->
+          <div
+            class="about-hero-content reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">About The Coach</span>
+
+            <h1 id="about-hero-title">
+              Helping People Build
+              <span class="about-accent">Stronger Bodies</span>
+              and Better Habits
+            </h1>
+
+            <p class="about-hero-text">
+              Our coaching combines structured training, sustainable nutrition,
+              and accountability systems that help clients achieve long-term
+              results without extreme dieting or unrealistic routines.
+            </p>
+
+            <div class="about-hero-actions">
+              <a href="#" class="button button--primary">Start Training</a>
+              <a href="#" class="button button--outline">View Programs</a>
+            </div>
+
+            <div class="about-certifications">
+              <span>Certified Strength Coach</span>
+              <span>Nutrition Specialist</span>
+              <span>8+ Years Coaching</span>
+            </div>
+          </div>
+
+          <!-- Right Visual -->
+          <div
+            class="about-hero-visual reveal"
+            data-reveal
+            style="--delay: 0.18s"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a"
+              alt="Fitness trainer portrait"
+              class="about-trainer-image"
+            />
+
+            <div
+              class="about-widget about-widget--workout reveal"
+              data-reveal
+              style="--delay: 0.26s"
+            >
+              <span class="widget-title">Today's Workout</span>
+              <strong>Upper Body Strength</strong>
+              <small>45 min • 320 kcal</small>
+            </div>
+
+            <div
+              class="about-widget about-widget--transform reveal"
+              data-reveal
+              style="--delay: 0.32s"
+            >
+              <span class="widget-title">Client Progress</span>
+              <strong>14kg Lost</strong>
+              <small>12 Week Program</small>
+            </div>
+
+            <div
+              class="about-widget about-widget--nutrition reveal"
+              data-reveal
+              style="--delay: 0.38s"
+            >
+              <span class="widget-title">Nutrition Plan</span>
+              <strong>2300 kcal</strong>
+              <small>Balanced Macros</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="founder-section" aria-labelledby="founder-title">
+  <div class="container founder-grid">
+
+    <!-- Coach Image -->
+    <div class="founder-image-wrapper reveal" data-reveal style="--delay:0.08s;">
+      <img
+        src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba"
+        alt="Personal fitness trainer portrait"
+        class="founder-image"
+      >
+    </div>
+
+    <!-- Story Content -->
+    <div class="founder-content reveal" data-reveal style="--delay:0.16s;">
+
+      <span class="section-kicker">Founder Story</span>
+
+      <h2 id="founder-title">Meet Your Coach</h2>
+
+      <p class="founder-story">
+        My coaching journey started after years of experimenting with training
+        methods, nutrition strategies, and real-world client results. I realized
+        that the biggest transformations happen when training, nutrition, and
+        accountability work together.
+      </p>
+
+      <p class="founder-story">
+        Today I help busy professionals build stronger bodies, improve their
+        health, and develop sustainable habits through structured coaching
+        systems designed for long-term success.
+      </p>
+
+      <div class="founder-signature">
+        — Coach Daniel
+      </div>
+
+      <!-- Credentials -->
+      <div class="founder-credentials">
+
+        <div class="credential-card">
+          <i class="fa-solid fa-dumbbell"></i>
+          <span>Certified Strength Coach</span>
+        </div>
+
+        <div class="credential-card">
+          <i class="fa-solid fa-apple-whole"></i>
+          <span>Nutrition Specialist</span>
+        </div>
+
+        <div class="credential-card">
+          <i class="fa-solid fa-medal"></i>
+          <span>8+ Years Coaching</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="mission-section" aria-labelledby="mission-title">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="section-heading mission-heading reveal" data-reveal style="--delay:0.08s;">
+      <span class="section-kicker">Our Philosophy</span>
+      <h2 id="mission-title">Mission & Core Values</h2>
+      <p>
+        Our coaching system is built around science-based training, sustainable
+        nutrition, and long-term accountability so clients achieve real,
+        measurable results.
+      </p>
+    </div>
+
+    <!-- Value Cards -->
+    <div class="mission-grid">
+
+      <article class="mission-card reveal" data-reveal style="--delay:0.14s;">
+        <span class="mission-icon">
+          <i class="fa-solid fa-dumbbell"></i>
+        </span>
+        <h3>Science-Based Training</h3>
+        <p>
+          Every program is designed using proven strength principles to ensure
+          measurable progress and injury-free performance.
+        </p>
+      </article>
+
+      <article class="mission-card reveal" data-reveal style="--delay:0.2s;">
+        <span class="mission-icon">
+          <i class="fa-solid fa-apple-whole"></i>
+        </span>
+        <h3>Sustainable Nutrition</h3>
+        <p>
+          Our nutrition strategies focus on long-term habits instead of extreme
+          diets, helping clients maintain results for years.
+        </p>
+      </article>
+
+      <article class="mission-card reveal" data-reveal style="--delay:0.26s;">
+        <span class="mission-icon">
+          <i class="fa-solid fa-user-check"></i>
+        </span>
+        <h3>Accountability Coaching</h3>
+        <p>
+          Weekly check-ins, progress tracking, and feedback ensure every client
+          stays consistent and motivated.
+        </p>
+      </article>
+
+      <article class="mission-card reveal" data-reveal style="--delay:0.32s;">
+        <span class="mission-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </span>
+        <h3>Long-Term Lifestyle</h3>
+        <p>
+          We help clients build habits that improve strength, health, and
+          confidence beyond the coaching program.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section class="method-section" aria-labelledby="method-title">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="section-heading method-heading reveal" data-reveal style="--delay:0.08s;">
+      <span class="section-kicker">How Coaching Works</span>
+      <h2 id="method-title">The Coaching Method</h2>
+      <p>
+        Our structured process ensures every client receives a personalized plan,
+        expert guidance, and ongoing accountability for long-term results.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="method-timeline">
+
+      <article class="method-step reveal" data-reveal style="--delay:0.14s;">
+        <span class="method-number">01</span>
+        <h3>Fitness Assessment</h3>
+        <p>
+          We evaluate your fitness level, lifestyle, and goals to create a clear
+          starting point for your transformation.
+        </p>
+      </article>
+
+      <article class="method-step reveal" data-reveal style="--delay:0.2s;">
+        <span class="method-number">02</span>
+        <h3>Personalized Workout Plan</h3>
+        <p>
+          A structured program combining strength training, conditioning,
+          and recovery strategies tailored to your body and goals.
+        </p>
+      </article>
+
+      <article class="method-step reveal" data-reveal style="--delay:0.26s;">
+        <span class="method-number">03</span>
+        <h3>Weekly Coaching</h3>
+        <p>
+          Regular check-ins, form feedback, and progress tracking keep
+          you accountable and continuously improving.
+        </p>
+      </article>
+
+      <article class="method-step reveal" data-reveal style="--delay:0.32s;">
+        <span class="method-number">04</span>
+        <h3>Long-Term Transformation</h3>
+        <p>
+          Sustainable nutrition and training habits help you maintain
+          results and build a healthier lifestyle.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<section class="timeline-section" aria-labelledby="timeline-title">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="section-heading timeline-heading reveal" data-reveal style="--delay:0.08s;">
+      <span class="section-kicker">Journey</span>
+      <h2 id="timeline-title">Coaching Journey</h2>
+      <p>
+        From the first online clients to hundreds of transformations,
+        the journey has been built around helping people achieve stronger,
+        healthier lives.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-wrapper">
+
+      <article class="timeline-item reveal" data-reveal style="--delay:0.14s;">
+        <div class="timeline-year">2018</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Started Online Coaching</h3>
+          <p>
+            Launched the first online coaching program helping clients
+            train remotely with structured fitness plans.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-reveal style="--delay:0.2s;">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>100+ Clients Milestone</h3>
+          <p>
+            Reached the milestone of coaching over one hundred clients
+            across strength training and fat-loss programs.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-reveal style="--delay:0.26s;">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Launched Nutrition Coaching</h3>
+          <p>
+            Added personalized nutrition plans and macro coaching
+            to support sustainable body transformations.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal" data-reveal style="--delay:0.32s;">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>500+ Transformations Achieved</h3>
+          <p>
+            Celebrated more than 500 successful transformations
+            through structured training and accountability coaching.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+
+    <div class="cta-shell reveal" data-reveal style="--delay:0.08s;">
+
+      <span class="section-kicker">Start Your Transformation</span>
+
+      <h2 id="cta-title">Ready to Transform Your Body?</h2>
+
+      <p>
+        Join hundreds of clients who improved their strength, health,
+        and confidence through structured coaching and sustainable habits.
+      </p>
+
+      <div class="cta-actions">
+
+        <a href="#" class="button button--primary cta-button">
+          Start Training
+        </a>
+
+        <a href="#" class="button button--outline cta-button-secondary">
+          Book Free Consultation
+        </a>
+
+      </div>
+
+      <!-- Trust badges -->
+      <div class="cta-trust">
+
+        <span>
+          <i class="fa-solid fa-star"></i>
+          4.9 Client Rating
+        </span>
+
+        <span>
+          <i class="fa-solid fa-users"></i>
+          1200+ Clients
+        </span>
+
+        <span>
+          <i class="fa-solid fa-dumbbell"></i>
+          500+ Transformations
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    </main>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <!-- Newsletter -->
+      <section class="footer-newsletter">
+        <div class="container footer-newsletter__inner">
+          <div class="footer-newsletter__content">
+            <h2 id="footer-title">Get Fitness Tips & Weekly Workouts</h2>
+            <p>
+              Join thousands of members receiving training tips, nutrition
+              guides, and motivation.
+            </p>
+          </div>
+
+          <form class="newsletter-form" action="#">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button class="button button--primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a
+              class="brand"
+              href="HomePage-2.html"
+              aria-label="PulseForge Fitness home"
+            >
+              <span class="brand__mark">
+                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+              </span>
+              <span class="brand__copy">
+                <strong>PulseForge</strong>
+                <small>Performance Coaching</small>
+              </span>
+            </a>
+            <p>
+              Helping people transform their bodies through structured training,
+              nutrition coaching, and sustainable habits.
+            </p>
+
+            <div class="footer-trust">
+              <span>✔ Certified Trainer</span>
+              <span>✔ Proven Programs</span>
+              <span>✔ 1200+ Clients</span>
+            </div>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Programs -->
+          <nav class="footer-links">
+            <h3>Programs</h3>
+            <ul>
+              <li><a href="#">Weight Loss Program</a></li>
+              <li><a href="#">Muscle Building</a></li>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Online Coaching</a></li>
+              <li><a href="#">Nutrition Coaching</a></li>
+            </ul>
+          </nav>
+
+          <!-- Quick Links -->
+          <nav class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Resources -->
+          <nav class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Workout Library</a></li>
+              <li><a href="#">Meal Plans</a></li>
+              <li><a href="#">Fitness Calculator</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: coach@fitcoach.com</li>
+              <li>Phone: +1 (234) 567-890</li>
+              <li>Location: Los Angeles, CA</li>
+              <li>Mon-Fri: 8am – 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <p>© 2026 FitCoach. All rights reserved.</p>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

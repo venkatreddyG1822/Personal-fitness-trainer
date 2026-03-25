@@ -1,0 +1,1421 @@
+<!-- Glad we're building this admin dashboard together - here's the full HTML wired up as requested. -->
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseForge Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+  </head>
+  <body class="dashboard-page">
+    <header class="site-header" data-header>
+      <div class="container">
+        <div class="navbar">
+          <a class="brand" href="HomePage-1.html">
+            <span class="brand__mark">
+              <i class="fa-solid fa-dumbbell"></i>
+            </span>
+            <span class="brand__copy">
+              <strong>PulseForge</strong>
+              <small>Admin Command</small>
+            </span>
+          </a>
+
+          <div class="header-tools">
+            <button class="utility-button" data-rtl-toggle aria-label="Toggle RTL">
+              <i class="fa-solid fa-globe"></i>
+            </button>
+
+            <button class="utility-button" data-theme-toggle aria-label="Toggle theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <div class="notification-wrap" data-notification-wrap>
+              <button
+                class="utility-button notification-toggle"
+                type="button"
+                data-notification-toggle
+                aria-expanded="false"
+                aria-label="Open notifications"
+              >
+                <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              </button>
+
+              <section
+                class="notification-dropdown"
+                data-notification-panel
+                aria-label="Notifications"
+                aria-hidden="true"
+              >
+                <div class="notification-dropdown__header">
+                  <h3>Notifications</h3>
+                  <span class="notification-badge" data-notification-count>4</span>
+                </div>
+
+                <ul class="notification-list" role="list">
+                  <li class="notification-item is-unread" data-notification-item>
+                    <button class="notification-item__button" type="button">
+                      <span class="notification-item__avatar">
+                        <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                      </span>
+                      <span class="notification-item__content">
+                        <span class="notification-item__title">Trainer Approval Needed</span>
+                        <span class="notification-item__desc">2 new trainer applications awaiting review.</span>
+                        <time class="notification-item__time" datetime="2026-03-17T10:15">5 mins ago</time>
+                      </span>
+                      <span class="notification-dot" aria-hidden="true"></span>
+                    </button>
+                  </li>
+
+                  <li class="notification-item is-unread" data-notification-item>
+                    <button class="notification-item__button" type="button">
+                      <span class="notification-item__avatar notification-item__avatar--accent">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                      </span>
+                      <span class="notification-item__content">
+                        <span class="notification-item__title">Weekly Revenue Spike</span>
+                        <span class="notification-item__desc">Revenue is up 12% compared to last week.</span>
+                        <time class="notification-item__time" datetime="2026-03-17T09:42">38 mins ago</time>
+                      </span>
+                      <span class="notification-dot" aria-hidden="true"></span>
+                    </button>
+                  </li>
+
+                  <li class="notification-item" data-notification-item>
+                    <button class="notification-item__button" type="button">
+                      <span class="notification-item__avatar notification-item__avatar--success">
+                        <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+                      </span>
+                      <span class="notification-item__content">
+                        <span class="notification-item__title">Support Queue Updated</span>
+                        <span class="notification-item__desc">6 new messages from enterprise clients.</span>
+                        <time class="notification-item__time" datetime="2026-03-17T08:05">2 hrs ago</time>
+                      </span>
+                    </button>
+                  </li>
+
+                  <li class="notification-item" data-notification-item>
+                    <button class="notification-item__button" type="button">
+                      <span class="notification-item__avatar">
+                        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                      </span>
+                      <span class="notification-item__content">
+                        <span class="notification-item__title">System Health Stable</span>
+                        <span class="notification-item__desc">All services running within normal thresholds.</span>
+                        <time class="notification-item__time" datetime="2026-03-16T19:10">Yesterday</time>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="notification-dropdown__footer">
+                  <a href="#" class="notification-view-all">View All Notifications</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="profile-dropdown has-dropdown" data-dropdown>
+              <button
+                class="profile-toggle"
+                type="button"
+                data-dropdown-toggle
+                aria-expanded="false"
+                aria-label="Open profile menu"
+              >
+                <span class="profile-avatar">
+                  <img
+                    src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%238dff2f'/><stop offset='1' stop-color='%2320d67e'/></linearGradient></defs><rect width='96' height='96' rx='28' fill='url(%23g)'/><text x='48' y='54' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='32' fill='%230d1525'>AD</text></svg>"
+                    alt="Admin profile"
+                  />
+                </span>
+                <span class="profile-name">Admin Director</span>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+              </button>
+
+              <div class="dropdown-menu profile-menu" role="menu">
+                <div class="dropdown-menu__inner">
+                  <a href="#" role="menuitem">Admin Profile</a>
+                  <a href="#" role="menuitem">Settings</a>
+                  <a href="login.html" role="menuitem">Logout</a>
+                </div>
+              </div>
+            </div>
+
+            <button class="menu-button" id="sidebarToggle" aria-label="Toggle sidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard-layout">
+      <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <nav class="dashboard-menu">
+          <button class="menu-link active" data-target="overview">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Dashboard Overview</span>
+          </button>
+          <button class="menu-link" data-target="users">
+            <i class="fa-solid fa-users"></i>
+            <span>User Management</span>
+          </button>
+          <button class="menu-link" data-target="trainers">
+            <i class="fa-solid fa-user-shield"></i>
+            <span>Trainer Management</span>
+          </button>
+          <button class="menu-link" data-target="programs">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span>Workout Programs</span>
+          </button>
+          <button class="menu-link" data-target="nutrition">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Nutrition Plans</span>
+          </button>
+          <button class="menu-link" data-target="subscriptions">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>Subscriptions &amp; Payments</span>
+          </button>
+          <button class="menu-link" data-target="analytics">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Analytics &amp; Reports</span>
+          </button>
+          <button class="menu-link" data-target="messages">
+            <i class="fa-solid fa-comments"></i>
+            <span>Messages &amp; Support</span>
+          </button>
+          <button class="menu-link" data-target="settings">
+            <i class="fa-solid fa-gear"></i>
+            <span>System Settings</span>
+          </button>
+          <button class="menu-link" data-target="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </button>
+        </nav>
+      </aside>
+      <div class="dashboard-overlay" data-dashboard-overlay></div>
+
+      <main class="dashboard-content-wrapper">
+        <div class="dashboard-content">
+          <section class="dashboard-panel active" id="overview">
+            <div class="dashboard-overview">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Admin Snapshot</p>
+                  <h2>Dashboard Overview</h2>
+                  <p class="dashboard-subtitle">Monitor platform health, growth, and engagement at a glance.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Export Report</button>
+                  <button class="button button--primary" type="button">Generate Insights</button>
+                </div>
+              </header>
+
+              <div class="dashboard-summary-grid">
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <div>
+                    <p>Total Users</p>
+                    <h3>24.8k</h3>
+                    <span class="summary-meta">+8.4% this month</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--accent">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                  </div>
+                  <div>
+                    <p>Monthly Revenue</p>
+                    <h3>$184k</h3>
+                    <span class="summary-meta">MRR +$12k</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--cool">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div>
+                    <p>Active Subscriptions</p>
+                    <h3>9,420</h3>
+                    <span class="summary-meta">82% retention</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--violet">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                  </div>
+                  <div>
+                    <p>Pending Reviews</p>
+                    <h3>37</h3>
+                    <span class="summary-meta">Trainers &amp; tickets</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="dashboard-analytics-grid">
+                <div class="dashboard-analytics-main">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>User Growth</h4>
+                        <p>New signups over the last 8 weeks</p>
+                      </div>
+                      <span class="chart-badge">Last 8 weeks</span>
+                    </div>
+                    <div class="chart-canvas">
+                      <canvas id="adminUserGrowthChart" height="160"></canvas>
+                    </div>
+                  </article>
+
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Revenue Performance</h4>
+                        <p>Weekly revenue from subscriptions</p>
+                      </div>
+                      <span class="chart-badge chart-badge--accent">USD</span>
+                    </div>
+                    <div class="chart-canvas">
+                      <canvas id="adminRevenueChart" height="160"></canvas>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="dashboard-analytics-side">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Plans Distribution</h4>
+                        <p>Active subscription mix</p>
+                      </div>
+                    </div>
+                    <div class="chart-canvas chart-canvas--center">
+                      <canvas id="adminPlanDonutChart" height="200"></canvas>
+                    </div>
+                    <div class="macro-legend">
+                      <span><strong>Starter</strong> 32%</span>
+                      <span><strong>Pro</strong> 46%</span>
+                      <span><strong>Elite</strong> 22%</span>
+                    </div>
+                  </article>
+
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Recent Activity</h4>
+                        <p>Latest administrative events</p>
+                      </div>
+                      <span class="chart-badge chart-badge--cool">Live</span>
+                    </div>
+                    <ul class="upcoming-sessions">
+                      <li>
+                        <span>New enterprise signup: CoreFit HQ</span>
+                        <span class="session-chip high">1 min ago</span>
+                      </li>
+                      <li>
+                        <span>Trainer request approved: Olivia Lane</span>
+                        <span class="session-chip low">12 mins ago</span>
+                      </li>
+                      <li>
+                        <span>Payment issue resolved: Premium plan</span>
+                        <span class="session-chip high">45 mins ago</span>
+                      </li>
+                      <li>
+                        <span>Support escalation created: Nutrition data</span>
+                        <span class="session-chip low">2 hrs ago</span>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="dashboard-panel" id="users">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Operations</p>
+                  <h2>User Management</h2>
+                  <p class="dashboard-subtitle">Search, filter, and manage active users across plans.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <form class="blog-search" role="search">
+                    <input type="search" placeholder="Search users, email, or plan" aria-label="Search users" />
+                    <button class="blog-search-btn" type="button" aria-label="Search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                  <button class="button button--outline" type="button">
+                    Filter: All Plans <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </div>
+              </header>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>User Directory</h4>
+                    <p>Overview of active and paused members</p>
+                  </div>
+                  <span class="chart-badge">2,430 active</span>
+                </div>
+                <div class="pricing-comparison__wrap">
+                  <table class="pricing-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Plan</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Ariana Woods</th>
+                        <td>ariana@pulseforge.com</td>
+                        <td>Elite</td>
+                        <td><span class="chart-badge">Active</span></td>
+                        <td><button class="button button--outline" type="button">View</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Michael Trent</th>
+                        <td>m.trent@pulseforge.com</td>
+                        <td>Pro</td>
+                        <td><span class="chart-badge chart-badge--accent">Trial</span></td>
+                        <td><button class="button button--outline" type="button">Review</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sophia Lewis</th>
+                        <td>s.lewis@pulseforge.com</td>
+                        <td>Starter</td>
+                        <td><span class="chart-badge chart-badge--cool">Paused</span></td>
+                        <td><button class="button button--outline" type="button">Resume</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jay Patel</th>
+                        <td>jay.patel@pulseforge.com</td>
+                        <td>Pro</td>
+                        <td><span class="chart-badge">Active</span></td>
+                        <td><button class="button button--outline" type="button">View</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="trainers">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Team Ops</p>
+                  <h2>Trainer Management</h2>
+                  <p class="dashboard-subtitle">Approve new trainers and track performance at scale.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Invite Trainer</button>
+                  <button class="button button--primary" type="button">Review Applications</button>
+                </div>
+              </header>
+
+              <div class="dashboard-summary-grid">
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Olivia Lane</h4>
+                      <p>Strength &amp; Mobility - 42 clients</p>
+                    </div>
+                    <span class="chart-badge">Pending</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Experience</span>
+                      <strong>8 yrs</strong>
+                    </div>
+                    <div>
+                      <span>Rating</span>
+                      <strong>4.9</strong>
+                    </div>
+                    <div>
+                      <span>Certifications</span>
+                      <strong>NASM</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--primary" type="button">Approve</button>
+                    <button class="button button--outline" type="button">Reject</button>
+                  </div>
+                </article>
+
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Marcus Hill</h4>
+                      <p>HIIT &amp; Conditioning - 58 clients</p>
+                    </div>
+                    <span class="chart-badge chart-badge--accent">Active</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Experience</span>
+                      <strong>6 yrs</strong>
+                    </div>
+                    <div>
+                      <span>Rating</span>
+                      <strong>4.7</strong>
+                    </div>
+                    <div>
+                      <span>Certifications</span>
+                      <strong>ACE</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--outline" type="button">View</button>
+                    <button class="button button--outline" type="button">Suspend</button>
+                  </div>
+                </article>
+
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Sofia Mendes</h4>
+                      <p>Nutrition &amp; Lifestyle - 33 clients</p>
+                    </div>
+                    <span class="chart-badge chart-badge--cool">Review</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Experience</span>
+                      <strong>5 yrs</strong>
+                    </div>
+                    <div>
+                      <span>Rating</span>
+                      <strong>4.8</strong>
+                    </div>
+                    <div>
+                      <span>Certifications</span>
+                      <strong>Precision</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--primary" type="button">Approve</button>
+                    <button class="button button--outline" type="button">Reject</button>
+                  </div>
+                </article>
+
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>David Chen</h4>
+                      <p>Performance Coach - 46 clients</p>
+                    </div>
+                    <span class="chart-badge">Active</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Experience</span>
+                      <strong>7 yrs</strong>
+                    </div>
+                    <div>
+                      <span>Rating</span>
+                      <strong>4.6</strong>
+                    </div>
+                    <div>
+                      <span>Certifications</span>
+                      <strong>CSCS</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--outline" type="button">View</button>
+                    <button class="button button--outline" type="button">Message</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="dashboard-panel" id="programs">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Library</p>
+                  <h2>Workout Programs</h2>
+                  <p class="dashboard-subtitle">Curate program packs and update training templates.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Edit Library</button>
+                  <button class="button button--primary" type="button">Create Program</button>
+                </div>
+              </header>
+
+              <div class="dashboard-summary-grid">
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Strength Foundations</h4>
+                      <p>8-week structured build</p>
+                    </div>
+                    <span class="chart-badge">Core</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Duration</span>
+                      <strong>8 Weeks</strong>
+                    </div>
+                    <div>
+                      <span>Difficulty</span>
+                      <strong>Beginner</strong>
+                    </div>
+                    <div>
+                      <span>Workouts</span>
+                      <strong>24</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--outline" type="button">Edit</button>
+                    <button class="button button--outline" type="button">Archive</button>
+                  </div>
+                </article>
+
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Hybrid Athlete</h4>
+                      <p>Strength + conditioning blend</p>
+                    </div>
+                    <span class="chart-badge chart-badge--accent">Featured</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Duration</span>
+                      <strong>10 Weeks</strong>
+                    </div>
+                    <div>
+                      <span>Difficulty</span>
+                      <strong>Intermediate</strong>
+                    </div>
+                    <div>
+                      <span>Workouts</span>
+                      <strong>30</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--outline" type="button">Edit</button>
+                    <button class="button button--outline" type="button">Duplicate</button>
+                  </div>
+                </article>
+
+                <article class="dashboard-chart-card">
+                  <div class="chart-header">
+                    <div>
+                      <h4>Peak Performance</h4>
+                      <p>Advanced athlete pathway</p>
+                    </div>
+                    <span class="chart-badge chart-badge--cool">Elite</span>
+                  </div>
+                  <div class="plan-meta">
+                    <div>
+                      <span>Duration</span>
+                      <strong>12 Weeks</strong>
+                    </div>
+                    <div>
+                      <span>Difficulty</span>
+                      <strong>Advanced</strong>
+                    </div>
+                    <div>
+                      <span>Workouts</span>
+                      <strong>36</strong>
+                    </div>
+                  </div>
+                  <div class="dashboard-overview__actions">
+                    <button class="button button--outline" type="button">Edit</button>
+                    <button class="button button--outline" type="button">Archive</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="nutrition">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Nutrition Ops</p>
+                  <h2>Nutrition Plans</h2>
+                  <p class="dashboard-subtitle">Manage meal templates and macro targets across cohorts.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">View Library</button>
+                  <button class="button button--primary" type="button">Create Plan</button>
+                </div>
+              </header>
+
+              <div class="nutrition-grid">
+                <div class="nutrition-main">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Meal Plan Directory</h4>
+                        <p>Top plans by adoption rate</p>
+                      </div>
+                      <span class="chart-badge">12 active plans</span>
+                    </div>
+                    <ul class="meal-log">
+                      <li>
+                        <span>Lean Gain Blueprint</span>
+                        <span class="meal-kcal">42% adoption</span>
+                      </li>
+                      <li>
+                        <span>Metabolic Reset</span>
+                        <span class="meal-kcal">31% adoption</span>
+                      </li>
+                      <li>
+                        <span>Endurance Fueling</span>
+                        <span class="meal-kcal">18% adoption</span>
+                      </li>
+                      <li>
+                        <span>Plant Power</span>
+                        <span class="meal-kcal">9% adoption</span>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+                <div class="nutrition-side">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Macro Targets</h4>
+                        <p>Current system-wide defaults</p>
+                      </div>
+                    </div>
+                    <div class="macro-bars">
+                      <div>
+                        <div class="macro-label">
+                          <span>Protein</span>
+                          <strong>35%</strong>
+                        </div>
+                        <span class="progress-track"><span class="progress-fill" data-progress="35"></span></span>
+                      </div>
+                      <div>
+                        <div class="macro-label">
+                          <span>Carbs</span>
+                          <strong>45%</strong>
+                        </div>
+                        <span class="progress-track"><span class="progress-fill" data-progress="45"></span></span>
+                      </div>
+                      <div>
+                        <div class="macro-label">
+                          <span>Fat</span>
+                          <strong>20%</strong>
+                        </div>
+                        <span class="progress-track"><span class="progress-fill" data-progress="20"></span></span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="subscriptions">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Revenue Ops</p>
+                  <h2>Subscriptions &amp; Payments</h2>
+                  <p class="dashboard-subtitle">Track revenue trends and manage billing activity.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Export Payments</button>
+                  <button class="button button--primary" type="button">Manage Plans</button>
+                </div>
+              </header>
+
+              <div class="dashboard-summary-grid">
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                  </div>
+                  <div>
+                    <p>Total Revenue</p>
+                    <h3>$1.42M</h3>
+                    <span class="summary-meta">YTD</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--accent">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div>
+                    <p>Monthly Recurring</p>
+                    <h3>$184k</h3>
+                    <span class="summary-meta">+6.2% MoM</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--cool">
+                    <i class="fa-solid fa-rotate"></i>
+                  </div>
+                  <div>
+                    <p>Churn Rate</p>
+                    <h3>2.1%</h3>
+                    <span class="summary-meta">Below target</span>
+                  </div>
+                </article>
+                <article class="dashboard-summary-card">
+                  <div class="summary-icon summary-icon--violet">
+                    <i class="fa-solid fa-credit-card"></i>
+                  </div>
+                  <div>
+                    <p>Payments Today</p>
+                    <h3>$8.6k</h3>
+                    <span class="summary-meta">124 transactions</span>
+                  </div>
+                </article>
+              </div>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Recent Payments</h4>
+                    <p>Latest subscription transactions</p>
+                  </div>
+                  <span class="chart-badge">Live</span>
+                </div>
+                <div class="pricing-comparison__wrap">
+                  <table class="pricing-table">
+                    <thead>
+                      <tr>
+                        <th>Member</th>
+                        <th>Plan</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Method</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CoreFit HQ</th>
+                        <td>Enterprise</td>
+                        <td>$2,450</td>
+                        <td><span class="chart-badge">Paid</span></td>
+                        <td>Invoice</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Amelia Rivers</th>
+                        <td>Elite</td>
+                        <td>$189</td>
+                        <td><span class="chart-badge chart-badge--accent">Paid</span></td>
+                        <td>Card</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Liam Torres</th>
+                        <td>Pro</td>
+                        <td>$129</td>
+                        <td><span class="chart-badge chart-badge--cool">Pending</span></td>
+                        <td>Bank</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sage Collective</th>
+                        <td>Enterprise</td>
+                        <td>$3,200</td>
+                        <td><span class="chart-badge">Paid</span></td>
+                        <td>Invoice</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="dashboard-panel" id="analytics">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Insights</p>
+                  <h2>Analytics &amp; Reports</h2>
+                  <p class="dashboard-subtitle">Deep-dive into usage, engagement, and retention analytics.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Schedule Report</button>
+                  <button class="button button--primary" type="button">Download PDF</button>
+                </div>
+              </header>
+
+              <div class="dashboard-analytics-grid">
+                <div class="dashboard-analytics-main">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Engagement Trend</h4>
+                        <p>Weekly active users and session depth</p>
+                      </div>
+                      <span class="chart-badge">12 weeks</span>
+                    </div>
+                    <div class="chart-canvas">
+                      <canvas id="adminAnalyticsLineChart" height="160"></canvas>
+                    </div>
+                  </article>
+
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Retention Cohorts</h4>
+                        <p>Monthly retention percentage by plan</p>
+                      </div>
+                      <span class="chart-badge chart-badge--accent">Cohorts</span>
+                    </div>
+                    <div class="chart-canvas">
+                      <canvas id="adminAnalyticsBarChart" height="160"></canvas>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="dashboard-analytics-side">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Key Insights</h4>
+                        <p>Automated findings this week</p>
+                      </div>
+                    </div>
+                    <ul class="meal-log">
+                      <li>
+                        <span>Top conversion: Pro Plan onboarding</span>
+                        <span class="meal-kcal">+14%</span>
+                      </li>
+                      <li>
+                        <span>Highest churn risk: Starter plan week 2</span>
+                        <span class="meal-kcal">8.2%</span>
+                      </li>
+                      <li>
+                        <span>Most engaged cohort: Strength Pro</span>
+                        <span class="meal-kcal">3.8x</span>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="messages">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Support</p>
+                  <h2>Messages &amp; Support</h2>
+                  <p class="dashboard-subtitle">Respond to escalations and manage support conversations.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Assign Agent</button>
+                  <button class="button button--primary" type="button">New Message</button>
+                </div>
+              </header>
+
+              <div class="workout-grid">
+                <div class="workout-main">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Conversations</h4>
+                        <p>Priority support queue</p>
+                      </div>
+                      <span class="chart-badge">12 open</span>
+                    </div>
+                    <ul class="workout-list">
+                      <li>
+                        <div>
+                          <strong>PulsePeak Studios</strong>
+                          <span>Billing sync issue with enterprise plan</span>
+                        </div>
+                        <span class="workout-tag">Urgent</span>
+                      </li>
+                      <li>
+                        <div>
+                          <strong>Coach Alicia</strong>
+                          <span>Calendar integration not updating</span>
+                        </div>
+                        <span class="workout-tag">New</span>
+                      </li>
+                      <li>
+                        <div>
+                          <strong>Daniel Ross</strong>
+                          <span>Nutrition plan export missing macros</span>
+                        </div>
+                        <span class="workout-tag">Open</span>
+                      </li>
+                      <li>
+                        <div>
+                          <strong>ZenFit Collective</strong>
+                          <span>Custom reporting request</span>
+                        </div>
+                        <span class="workout-tag">Review</span>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+
+                <div class="workout-side">
+                  <article class="dashboard-chart-card">
+                    <div class="chart-header">
+                      <div>
+                        <h4>Active Conversation</h4>
+                        <p>PulsePeak Studios</p>
+                      </div>
+                      <span class="chart-badge chart-badge--cool">SLA 2h</span>
+                    </div>
+                    <div class="exercise-detail">
+                      <div>
+                        <span class="detail-label">Admin</span>
+                        <strong>We are investigating the billing sync issue. Expected update in 30 minutes.</strong>
+                      </div>
+                      <div>
+                        <span class="detail-label">Client</span>
+                        <strong>Thanks - please confirm if invoices will reconcile automatically.</strong>
+                      </div>
+                      <div>
+                        <span class="detail-label">Admin</span>
+                        <strong>Yes, reconciliation will run once the sync completes.</strong>
+                      </div>
+                    </div>
+                    <form class="contact-form">
+                      <div class="form-group">
+                        <label for="adminMessage">Message</label>
+                        <input id="adminMessage" type="text" placeholder="Type a reply..." />
+                      </div>
+                      <div class="dashboard-overview__actions">
+                        <button class="button button--outline" type="button">Attach</button>
+                        <button class="button button--primary" type="button">Send Reply</button>
+                      </div>
+                    </form>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="settings">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Preferences</p>
+                  <h2>System Settings</h2>
+                  <p class="dashboard-subtitle">Control platform-wide settings and automation rules.</p>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Restore Defaults</button>
+                  <button class="button button--primary" type="button">Save Changes</button>
+                </div>
+              </header>
+
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Platform Toggles</h4>
+                    <p>Enable or disable key system features</p>
+                  </div>
+                </div>
+                <div class="analytics-metrics">
+                  <div class="metric-card">
+                    <label>
+                      <input type="checkbox" checked />
+                      Enable automated onboarding sequences
+                    </label>
+                  </div>
+                  <div class="metric-card">
+                    <label>
+                      <input type="checkbox" checked />
+                      Require trainer certification verification
+                    </label>
+                  </div>
+                  <div class="metric-card">
+                    <label>
+                      <input type="checkbox" />
+                      Pause new trial signups
+                    </label>
+                  </div>
+                  <div class="metric-card">
+                    <label>
+                      <input type="checkbox" checked />
+                      Weekly analytics email summary
+                    </label>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="dashboard-panel" id="logout">
+            <div class="dashboard-section">
+              <header class="dashboard-overview__header">
+                <div>
+                  <p class="dashboard-kicker">Session</p>
+                  <h2>Logout</h2>
+                  <p class="dashboard-subtitle">End the admin session securely.</p>
+                </div>
+              </header>
+              <article class="dashboard-chart-card">
+                <div class="chart-header">
+                  <div>
+                    <h4>Ready to sign out?</h4>
+                    <p>All changes have been saved.</p>
+                  </div>
+                </div>
+                <div class="dashboard-overview__actions">
+                  <button class="button button--outline" type="button">Cancel</button>
+                  <button class="button button--primary" type="button">Logout</button>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const body = document.body;
+        const header = document.querySelector("[data-header]");
+        const rtlToggle = document.querySelector("[data-rtl-toggle]");
+        const themeToggle = document.querySelector("[data-theme-toggle]");
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const sidebar = document.getElementById("dashboardSidebar");
+        const dashboardOverlay = document.querySelector("[data-dashboard-overlay]");
+        const menuLinks = document.querySelectorAll(".menu-link[data-target]");
+        const panels = document.querySelectorAll(".dashboard-panel");
+        const notificationToggle = document.querySelector("[data-notification-toggle]");
+        const notificationPanel = document.querySelector("[data-notification-panel]");
+        const notificationWrap = document.querySelector("[data-notification-wrap]");
+        const notificationCount = document.querySelector("[data-notification-count]");
+        const notificationItems = document.querySelectorAll("[data-notification-item]");
+        const dropdownToggles = document.querySelectorAll("[data-dropdown-toggle]");
+        const dropdownParents = document.querySelectorAll("[data-dropdown]");
+        const progressFills = document.querySelectorAll("[data-progress]");
+        const mobileQuery = window.matchMedia("(max-width: 1024px)");
+
+        const updateScrollState = () => {
+          header?.classList.toggle("is-scrolled", window.scrollY > 10);
+        };
+
+        const updateThemeIcon = () => {
+          const icon = themeToggle?.querySelector("i");
+          if (!icon) return;
+          if (body.classList.contains("dark-mode")) {
+            icon.className = "fa-solid fa-moon";
+            themeToggle.setAttribute("aria-label", "Switch to dark mode");
+          } else {
+            icon.className = "fa-solid fa-sun";
+            themeToggle.setAttribute("aria-label", "Switch to light mode");
+          }
+        };
+
+        const updateNotificationCount = () => {
+          if (!notificationCount) return;
+          const unreadTotal = Array.from(notificationItems).filter((item) =>
+            item.classList.contains("is-unread")
+          ).length;
+          notificationCount.textContent = `${unreadTotal}`;
+          notificationCount.hidden = unreadTotal === 0;
+        };
+
+        const closeNotificationPanel = () => {
+          if (!notificationPanel || !notificationToggle) return;
+          notificationPanel.classList.remove("is-open");
+          notificationPanel.setAttribute("aria-hidden", "true");
+          notificationToggle.setAttribute("aria-expanded", "false");
+        };
+
+        const closeDropdowns = () => {
+          dropdownParents.forEach((parent) => parent.classList.remove("is-open"));
+          dropdownToggles.forEach((toggle) => toggle.setAttribute("aria-expanded", "false"));
+        };
+
+        const setActivePanel = (targetId) => {
+          panels.forEach((panel) => {
+            panel.classList.toggle("active", panel.id === targetId);
+          });
+          menuLinks.forEach((link) => {
+            link.classList.toggle("active", link.dataset.target === targetId);
+          });
+        };
+
+        const storedTheme = localStorage.getItem("pf-theme");
+        if (storedTheme === "light") {
+          body.classList.add("dark-mode");
+        }
+        updateThemeIcon();
+
+        const storedDir = localStorage.getItem("pf-dir");
+        if (storedDir === "rtl") {
+          root.setAttribute("dir", "rtl");
+        }
+
+        updateScrollState();
+        window.addEventListener("scroll", updateScrollState, { passive: true });
+
+        rtlToggle?.addEventListener("click", () => {
+          const next = root.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
+          root.setAttribute("dir", next);
+          localStorage.setItem("pf-dir", next);
+        });
+
+        themeToggle?.addEventListener("click", () => {
+          const isLight = body.classList.toggle("dark-mode");
+          localStorage.setItem("pf-theme", isLight ? "light" : "dark");
+          updateThemeIcon();
+        });
+
+        const closeSidebar = () => {
+          sidebar?.classList.remove("is-open");
+          body.classList.remove("nav-open");
+          sidebarToggle?.setAttribute("aria-expanded", "false");
+        };
+
+        sidebarToggle?.addEventListener("click", () => {
+          if (!sidebar) return;
+          const isOpen = sidebar.classList.toggle("is-open");
+          body.classList.toggle("nav-open", isOpen);
+          sidebarToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        dashboardOverlay?.addEventListener("click", closeSidebar);
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            const targetId = link.dataset.target;
+            if (!targetId) return;
+            setActivePanel(targetId);
+            if (mobileQuery.matches) {
+              sidebar?.classList.remove("is-open");
+              body.classList.remove("nav-open");
+            }
+          });
+        });
+
+        notificationToggle?.addEventListener("click", (event) => {
+          event.stopPropagation();
+          if (!notificationPanel) return;
+          const isOpen = notificationPanel.classList.toggle("is-open");
+          notificationPanel.setAttribute("aria-hidden", String(!isOpen));
+          notificationToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        notificationItems.forEach((item) => {
+          const button = item.querySelector("button");
+          button?.addEventListener("click", () => {
+            item.classList.remove("is-unread");
+            updateNotificationCount();
+          });
+        });
+
+        dropdownToggles.forEach((toggle) => {
+          toggle.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const parent = toggle.closest("[data-dropdown]");
+            const isOpen = parent?.classList.contains("is-open");
+            closeDropdowns();
+            if (parent && !isOpen) {
+              parent.classList.add("is-open");
+              toggle.setAttribute("aria-expanded", "true");
+            }
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (notificationWrap && !notificationWrap.contains(event.target)) {
+            closeNotificationPanel();
+          }
+          if (!event.target.closest("[data-dropdown]")) {
+            closeDropdowns();
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeNotificationPanel();
+            closeDropdowns();
+          }
+        });
+
+        progressFills.forEach((fill) => {
+          const value = Number.parseFloat(fill.dataset.progress || "0");
+          if (Number.isFinite(value)) {
+            fill.style.width = `${value}%`;
+          }
+        });
+
+        updateNotificationCount();
+
+        if (window.Chart) {
+          const styles = getComputedStyle(body);
+          const accent = styles.getPropertyValue("--accent-color").trim() || "#8dff2f";
+          const accentAlt = styles.getPropertyValue("--accent-color-alt").trim() || "#20d67e";
+          const textMuted = styles.getPropertyValue("--text-muted").trim() || "#9aa4b2";
+          const textPrimary = styles.getPropertyValue("--text-primary").trim() || "#f5f7fb";
+          const border = styles.getPropertyValue("--border-color").trim() || "rgba(255,255,255,0.12)";
+
+          Chart.defaults.font.family = styles.getPropertyValue("--font-body").trim() || "Inter, sans-serif";
+          Chart.defaults.color = textMuted;
+
+          const makeLineChart = (canvasId, data, label) => {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) return;
+            new Chart(canvas, {
+              type: "line",
+              data: {
+                labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8"],
+                datasets: [
+                  {
+                    label,
+                    data,
+                    borderColor: accent,
+                    backgroundColor: "rgba(141,255,47,0.16)",
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    pointBackgroundColor: accent,
+                    tension: 0.4,
+                    fill: true,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  x: {
+                    grid: { color: "transparent" },
+                    ticks: { color: textMuted },
+                  },
+                  y: {
+                    grid: { color: border },
+                    ticks: { color: textMuted },
+                  },
+                },
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,26,0.9)",
+                    titleColor: textPrimary,
+                    bodyColor: textMuted,
+                    borderColor: border,
+                    borderWidth: 1,
+                  },
+                },
+              },
+            });
+          };
+
+          const makeBarChart = (canvasId, data, label) => {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) return;
+            new Chart(canvas, {
+              type: "bar",
+              data: {
+                labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8"],
+                datasets: [
+                  {
+                    label,
+                    data,
+                    backgroundColor: [
+                      "rgba(141,255,47,0.55)",
+                      "rgba(141,255,47,0.45)",
+                      "rgba(141,255,47,0.6)",
+                      "rgba(141,255,47,0.5)",
+                      "rgba(32,214,126,0.6)",
+                      "rgba(32,214,126,0.5)",
+                      "rgba(32,214,126,0.65)",
+                      "rgba(32,214,126,0.55)",
+                    ],
+                    borderRadius: 10,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  x: {
+                    grid: { color: "transparent" },
+                    ticks: { color: textMuted },
+                  },
+                  y: {
+                    grid: { color: border },
+                    ticks: { color: textMuted },
+                  },
+                },
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,26,0.9)",
+                    titleColor: textPrimary,
+                    bodyColor: textMuted,
+                    borderColor: border,
+                    borderWidth: 1,
+                  },
+                },
+              },
+            });
+          };
+
+          const makeDoughnutChart = (canvasId, data, labels) => {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) return;
+            new Chart(canvas, {
+              type: "doughnut",
+              data: {
+                labels,
+                datasets: [
+                  {
+                    data,
+                    backgroundColor: [accent, accentAlt, "rgba(171,129,255,0.85)"],
+                    borderWidth: 0,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: "68%",
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,26,0.9)",
+                    titleColor: textPrimary,
+                    bodyColor: textMuted,
+                    borderColor: border,
+                    borderWidth: 1,
+                  },
+                },
+              },
+            });
+          };
+
+          makeLineChart("adminUserGrowthChart", [240, 320, 380, 460, 520, 640, 720, 820], "Users");
+          makeBarChart("adminRevenueChart", [120, 135, 148, 162, 180, 195, 210, 225], "Revenue");
+          makeDoughnutChart("adminPlanDonutChart", [32, 46, 22], ["Starter", "Pro", "Elite"]);
+          makeLineChart("adminAnalyticsLineChart", [68, 70, 74, 78, 82, 79, 86, 90], "Engagement");
+          makeBarChart("adminAnalyticsBarChart", [88, 84, 82, 78, 76, 74, 70, 68], "Retention");
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium fitness trainer website header with responsive navigation, dark mode, RTL support, and a high-end hero section.">
+    <title>PulseForge Fitness | Home Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="container">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a class="brand" href="HomePage-1.html" aria-label="PulseForge Fitness home">
+                    <span class="brand__mark">
+                        <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                    </span>
+                    <span class="brand__copy">
+                        <strong>PulseForge</strong>
+                        <small>Performance Coaching</small>
+                    </span>
+                </a>
+
+                <div class="nav-panel" id="site-navigation" data-nav-panel>
+                    <ul class="nav-menu">
+                        <li class="nav-item has-dropdown" data-dropdown>
+                            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" data-dropdown-toggle>
+                                <span>Home</span>
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-menu__inner">
+                                    <a href="HomePage-1.html">Home Page 1</a>
+                                    <a href="HomePage-2.html">Home Page 2</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item has-dropdown" data-dropdown>
+                            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" data-dropdown-toggle>
+                                <span>Programs</span>
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-menu__inner">
+                                    <a href="WorkoutPlans.html">Workout Plans</a>
+                                    <a href="Nutrition Coaching.html">Nutrition Coaching</a>
+                                    <a href="pricing.html">Pricing Plans</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item has-dropdown" data-dropdown>
+                            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" data-dropdown-toggle>
+                                <span>Dashboard</span>
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-menu__inner">
+                                    <a href="clientdashboard.html">Client Dashboard</a>
+                                    <a href="Admindashboard.html">Admin Dashboard</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-tools">
+                    <button class="utility-button" type="button" data-rtl-toggle aria-label="Toggle RTL direction">
+                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    </button>
+                    <button class="utility-button" type="button" data-theme-toggle aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                    </button>
+                    <div class="header-cta">
+                        <a class="button button--outline" href="login.html">Login</a>
+                        <a class="button button--primary" href="comingsoon.html">Book Now</a>
+                    </div>
+                    <button class="menu-button" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu">
+                        <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <main id="main-content">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-shell">
+                    <div class="hero-copy-block">
+                        <span class="eyebrow reveal" data-reveal style="--delay: 0.08s;">
+                            <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                            Elite Personal Fitness Trainer & Nutrition Coach
+                        </span>
+                        <h1 class="hero-title reveal" id="hero-title" data-reveal style="--delay: 0.16s;">
+                            Transform your body with
+                            <span class="headline-accent">smarter fitness coaching.</span>
+                        </h1>
+                        <p class="hero-copy reveal" data-reveal style="--delay: 0.24s;">
+                            Get custom workout plans, smart nutrition coaching, weekly accountability, and a premium client
+                            dashboard that keeps your progress measurable from day one.
+                        </p>
+
+                        <div class="hero-actions reveal" data-reveal style="--delay: 0.32s;">
+                            <a class="button button--primary" href="Booking.html">Start Training</a>
+                            <a class="button button--outline" href="WorkoutPlans.html">View Programs</a>
+                        </div>
+
+                        <div class="hero-social-proof reveal" data-reveal style="--delay: 0.4s;">
+                            <div class="avatar-stack" aria-label="Happy clients">
+                                <img src="https://i.pravatar.cc/80?img=12" alt="Client avatar 1">
+                                <img src="https://i.pravatar.cc/80?img=32" alt="Client avatar 2">
+                                <img src="https://i.pravatar.cc/80?img=47" alt="Client avatar 3">
+                                <img src="https://i.pravatar.cc/80?img=56" alt="Client avatar 4">
+                            </div>
+                            <p class="hero-rating">
+                                <strong>4.9 Rating</strong>
+                                <span>from 1000+ Clients</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-floating-cards reveal" data-reveal style="--delay: 0.5s;">
+                        <article class="hero-glass-card">
+                            <span class="hero-glass-card__icon">
+                                <i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i>
+                            </span>
+                            <h2>Transformations</h2>
+                            <p>Track visible changes with weekly check-ins, body metrics, and progress milestones.</p>
+                        </article>
+                        <article class="hero-glass-card">
+                            <span class="hero-glass-card__icon">
+                                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                            </span>
+                            <h2>Workout Plans</h2>
+                            <p>Structured phases for fat loss, strength, muscle building, and long-term consistency.</p>
+                        </article>
+                        <article class="hero-glass-card">
+                            <span class="hero-glass-card__icon">
+                                <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
+                            </span>
+                            <h2>Nutrition Coaching</h2>
+                            <p>Macro targets, meal structure, supplement guidance, and coaching that fits your routine.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-indicator reveal" type="button" data-scroll-hero aria-label="Scroll down" style="--delay: 0.58s;">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </button>
+        </section>
+
+        <section class="stats-section" aria-labelledby="stats-title">
+            <div class="container">
+                <div class="section-heading stats-section__heading reveal" data-reveal style="--delay: 0.08s;">
+                    <span class="section-kicker">Results That Build Trust</span>
+                    <h2 id="stats-title">Results You Can Measure</h2>
+                    <p>
+                        Every plan is built around consistency, accountability, and visible progress. These numbers
+                        reflect real client wins across training, nutrition, and long-term transformation.
+                    </p>
+                </div>
+
+                <div class="stats-orbit">
+                    <article class="stat-card stat-card--small reveal" data-reveal style="--delay: 0.14s;">
+                        <span class="stat-card__icon">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        </span>
+                        <strong class="stat-card__value">
+                            <span data-counter data-target="1200">0</span><span>+</span>
+                        </strong>
+                        <span class="stat-card__label">Clients Trained</span>
+                    </article>
+
+                    <article class="stat-card stat-card--small reveal" data-reveal style="--delay: 0.2s;">
+                        <span class="stat-card__icon">
+                            <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                        </span>
+                        <strong class="stat-card__value">
+                            <span data-counter data-target="12">0</span><span>+</span>
+                        </strong>
+                        <span class="stat-card__label">Years Experience</span>
+                    </article>
+
+                    <article class="stat-card stat-card--featured reveal" data-reveal style="--delay: 0.26s;">
+                        <div class="stat-card__halo" aria-hidden="true"></div>
+                        <span class="stat-card__eyebrow"></span>
+                        <strong class="stat-card__featured-value">
+                            <span data-counter data-target="500">0</span><span>+</span>
+                        </strong>
+                        <h3>Transformations</h3>
+                    </article>
+
+                    <article class="stat-card stat-card--small reveal" data-reveal style="--delay: 0.32s;">
+                        <span class="stat-card__icon">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong class="stat-card__value">
+                            <span data-counter data-target="4.9" data-decimals="1">0</span>
+                        </strong>
+                        <span class="stat-card__label">Average Rating</span>
+                    </article>
+
+                    <article class="stat-card stat-card--small reveal" data-reveal style="--delay: 0.38s;">
+                        <span class="stat-card__icon">
+                            <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                        </span>
+                        <strong class="stat-card__value">
+                            <span data-counter data-target="300">0</span><span>+</span>
+                        </strong>
+                        <span class="stat-card__label">Meal Plans Delivered</span>
+                    </article>
+                </div>
+
+                <div class="stats-progress reveal" data-reveal style="--delay: 0.44s;">
+                    <article class="progress-stat">
+                        <div class="progress-stat__top">
+                            <h3>Client Satisfaction</h3>
+                            <span>96%</span>
+                        </div>
+                        <div class="progress-track" aria-hidden="true">
+                            <span style="width: 96%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="progress-stat">
+                        <div class="progress-stat__top">
+                            <h3>Program Completion</h3>
+                            <span>89%</span>
+                        </div>
+                        <div class="progress-track progress-track--secondary" aria-hidden="true">
+                            <span style="width: 89%;"></span>
+                        </div>
+                    </article>
+
+                    <article class="progress-stat">
+                        <div class="progress-stat__top">
+                            <h3>Goal Achievement</h3>
+                            <span>92%</span>
+                        </div>
+                        <div class="progress-track progress-track--tertiary" aria-hidden="true">
+                            <span style="width: 92%;"></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="transform-section" aria-labelledby="transform-title">
+            <div class="container">
+                <div class="section-heading transform-section__heading reveal" data-reveal style="--delay: 0.08s;">
+                    <span class="section-kicker">Real Client Transformations</span>
+                    <h2 id="transform-title">Real Client Transformations</h2>
+                    <p>
+                        Every transformation is built on custom programming, nutrition precision, and weekly coaching
+                        feedback. This section highlights what disciplined execution looks like over time.
+                    </p>
+                </div>
+
+                <div class="transform-showcase">
+                    <div class="comparison-card reveal" data-reveal data-comparison style="--delay: 0.14s;">
+                        <div class="comparison-stage">
+                            <img
+                                class="comparison-image comparison-image--before"
+                                src="../assets/images/after1.avif"
+                                alt="Client before transformation"
+                            >
+                            <div class="comparison-image comparison-image--after" data-comparison-after style="width: 56%;">
+                                <img
+                                    src="../assets/images/before1.avif"
+                                    alt="Client after transformation"
+                                >
+                            </div>
+                            <span class="comparison-label comparison-label--before">Before</span>
+                            <span class="comparison-label comparison-label--after">After</span>
+                            <div class="comparison-handle" data-comparison-handle style="left: 56%;">
+                                <span></span>
+                            </div>
+                        </div>
+                        <input
+                            class="comparison-range"
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="56"
+                            aria-label="Adjust transformation comparison"
+                            data-comparison-range
+                        >
+                    </div>
+
+                    <article class="transform-story-card reveal" data-reveal style="--delay: 0.2s;">
+                        <span class="transform-story-card__tag">Featured Journey</span>
+                        <h3>Ariana Brooks</h3>
+                        <div class="transform-story-card__meta">
+                            <span><strong>18 kg</strong> Weight Lost</span>
+                            <span><strong>16 Weeks</strong> Lean Reset Program</span>
+                        </div>
+                        <p>
+                            “The structure changed everything. I had my workouts mapped out, my macros adjusted weekly,
+                            and the dashboard made it impossible to lose momentum. I feel stronger, leaner, and far more
+                            confident than I did at the start.”
+                        </p>
+                        <ul class="transform-story-card__list">
+                            <li>Weekly accountability reviews</li>
+                            <li>Custom macros and meal structure</li>
+                            <li>Progress tracking with video form checks</li>
+                        </ul>
+                        <a class="button button--primary" href="Booking.html">Start Your Transformation</a>
+                    </article>
+                </div>
+
+                <div class="transform-gallery">
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.08s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-1.avif" alt="Before photo of client Mason">
+                            <img src="../assets/images/after-gal-1.avif" alt="After photo of client Mason">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>Mason Hale</h3>
+                            <p>Lost 14 kg in 12 weeks</p>
+                        </div>
+                    </article>
+
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.14s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-2.avif" alt="Before photo of client Priya">
+                            <img src="../assets/images/after-gal-2.avif" alt="After photo of client Priya">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>Priya Nair</h3>
+                            <p>Lost 11 kg and rebuilt strength</p>
+                        </div>
+                    </article>
+
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.2s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-3.avif" alt="Before photo of client Daniel">
+                            <img src="../assets/images/after-gal-3.avif" alt="After photo of client Daniel">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>Daniel Cruz</h3>
+                            <p>Gained 6 kg of lean muscle</p>
+                        </div>
+                    </article>
+
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.26s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-4.avif" alt="Before photo of client Sophia">
+                            <img src="../assets/images/after-gal-4.avif" alt="After photo of client Sophia">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>roshan Reed</h3>
+                            <p>Lost 9 kg and improved mobility</p>
+                        </div>
+                    </article>
+
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.32s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-5.avif" alt="Before photo of client Omar">
+                            <img src="../assets/images/after-gal-5.avif" alt="After photo of client Omar">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>Omar Khan</h3>
+                            <p>Dropped 16 kg with macro coaching</p>
+                        </div>
+                    </article>
+
+                    <article class="transform-gallery-card reveal" data-reveal style="--delay: 0.38s;">
+                        <div class="transform-gallery-card__media">
+                            <img src="../assets/images/before-gal-6.avif" alt="Before photo of client Elena">
+                            <img src="../assets/images/after-gal-6.avif" alt="After photo of client Elena">
+                        </div>
+                        <div class="transform-gallery-card__overlay">
+                            <h3>Elena Park</h3>
+                            <p>Completed an 18-week recomposition plan</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="transform-metrics reveal" data-reveal style="--delay: 0.44s;">
+                    <article class="mini-metric-card">
+                        <span class="mini-metric-card__icon"><i class="fa-solid fa-weight-scale" aria-hidden="true"></i></span>
+                        <strong>12.8 kg</strong>
+                        <span>Average Weight Loss</span>
+                    </article>
+                    <article class="mini-metric-card">
+                        <span class="mini-metric-card__icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+                        <strong>91%</strong>
+                        <span>Program Completion Rate</span>
+                    </article>
+                    <article class="mini-metric-card">
+                        <span class="mini-metric-card__icon"><i class="fa-solid fa-face-smile-beam" aria-hidden="true"></i></span>
+                        <strong>97%</strong>
+                        <span>Client Satisfaction</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs-section" aria-labelledby="programs-title">
+            <div class="container">
+                <div class="section-heading programs-section__heading reveal" data-reveal style="--delay: 0.08s;">
+                    <span class="section-kicker">Signature Programs</span>
+                    <h2 id="programs-title">Programs for Every Goal</h2>
+                    <p>
+                        Choose the category that fits your current goal. Each program is mapped with training phases,
+                        nutrition guidance, accountability checkpoints, and a clear next step.
+                    </p>
+                </div>
+
+                <div class="program-tabs reveal" data-reveal style="--delay: 0.14s;" role="tablist" aria-label="Program categories">
+                    <button class="program-tab is-active" type="button" role="tab" aria-selected="true" data-program-filter="all">All Programs</button>
+                    <button class="program-tab" type="button" role="tab" aria-selected="false" data-program-filter="weight-loss">Weight Loss</button>
+                    <button class="program-tab" type="button" role="tab" aria-selected="false" data-program-filter="muscle-building">Muscle Building</button>
+                    <button class="program-tab" type="button" role="tab" aria-selected="false" data-program-filter="strength-training">Strength Training</button>
+                    <button class="program-tab" type="button" role="tab" aria-selected="false" data-program-filter="online-coaching">Online Coaching</button>
+                    <button class="program-tab" type="button" role="tab" aria-selected="false" data-program-filter="nutrition-coaching">Nutrition Coaching</button>
+                </div>
+
+                <div class="programs-grid reveal" data-reveal data-program-grid style="--delay: 0.2s;">
+                    <article class="program-card" data-program-card data-category="weight-loss">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Metabolic Reset"
+                            data-program-duration="12 Weeks"
+                            data-program-category="Weight Loss"
+                            data-program-copy="A structured calorie-deficit system with progressive workouts, weekly check-ins, and habit correction to drive sustainable fat loss."
+                            data-program-features="Four strength and conditioning sessions each week|Weekly weight and photo analysis|Cardio targets matched to recovery|Macro adjustments every 14 days"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Weight loss training program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Weight Loss</span>
+                                <h3>Metabolic Reset</h3>
+                                <p>High-accountability fat loss coaching for clients who need structure, consistency, and visible change.</p>
+                                <div class="program-card__meta">
+                                    <span>12 Weeks</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="program-card" data-program-card data-category="weight-loss">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Lean Launch"
+                            data-program-duration="8 Weeks"
+                            data-program-category="Weight Loss"
+                            data-program-copy="A shorter cut-focused block for busy professionals who want faster structure, tighter meal execution, and clear weekly targets."
+                            data-program-features="Three gym sessions plus two conditioning blocks|Portable meal templates for work weeks|App-based adherence tracking|Weekly check-in voice notes"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=900&q=80" alt="Lean launch weight loss program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Weight Loss</span>
+                                <h3>Lean Launch</h3>
+                                <p>Designed to create momentum fast with simpler programming, tighter nutrition control, and clear compliance targets.</p>
+                                <div class="program-card__meta">
+                                    <span>8 Weeks</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="program-card" data-program-card data-category="muscle-building">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Hypertrophy Blueprint"
+                            data-program-duration="16 Weeks"
+                            data-program-category="Muscle Building"
+                            data-program-copy="A progressive muscle-building system focused on training volume, exercise execution, recovery, and precision nutrition."
+                            data-program-features="Upper-lower hypertrophy split|Exercise video feedback for form|Surplus-based nutrition targets|Recovery and sleep audit each month"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Muscle building program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Muscle Building</span>
+                                <h3>Hypertrophy Blueprint</h3>
+                                <p>Built for clients chasing lean size with a repeatable training split and performance-driven nutrition planning.</p>
+                                <div class="program-card__meta">
+                                    <span>16 Weeks</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="program-card" data-program-card data-category="strength-training">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Strength Systems"
+                            data-program-duration="14 Weeks"
+                            data-program-category="Strength Training"
+                            data-program-copy="A strength-first coaching system centered on barbell progressions, technical proficiency, and recovery-backed performance."
+                            data-program-features="Custom squat, bench, and deadlift progressions|Top set and back-off load targets|Technique review from uploaded videos|Deload management and fatigue planning"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80" alt="Strength training program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Strength Training</span>
+                                <h3>Strength Systems</h3>
+                                <p>For clients who want to move heavier loads, improve technique, and build performance with deliberate progression.</p>
+                                <div class="program-card__meta">
+                                    <span>14 Weeks</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="program-card" data-program-card data-category="online-coaching">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Remote Accountability"
+                            data-program-duration="Ongoing"
+                            data-program-category="Online Coaching"
+                            data-program-copy="A premium online coaching model for clients who want fully remote support, direct accountability, and dynamic adjustments."
+                            data-program-features="Dashboard-based workout logging|Weekly video or voice-note check-ins|Macro and cardio updates as needed|Messaging support for questions and travel adjustments"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Online coaching program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Online Coaching</span>
+                                <h3>Remote Accountability</h3>
+                                <p>Designed for busy clients who need a coach in their corner without compromising flexibility or feedback quality.</p>
+                                <div class="program-card__meta">
+                                    <span>Ongoing</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="program-card" data-program-card data-category="nutrition-coaching">
+                        <button
+                            class="program-card__trigger"
+                            type="button"
+                            data-program-title="Macro Method"
+                            data-program-duration="10 Weeks"
+                            data-program-category="Nutrition Coaching"
+                            data-program-copy="A nutrition-only coaching track focused on macro compliance, meal architecture, appetite management, and consistency."
+                            data-program-features="Personalized calorie and macro setup|Meal timing strategy for your schedule|Supplement guidance and food swaps|Weekly compliance review with habit scoring"
+                            data-program-link="Booking.html"
+                            aria-expanded="false"
+                        >
+                            <div class="program-card__image-wrap">
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Nutrition coaching program">
+                            </div>
+                            <div class="program-card__body">
+                                <span class="program-card__badge">Nutrition Coaching</span>
+                                <h3>Macro Method</h3>
+                                <p>Nutrition structure for clients who need better food decisions, macro discipline, and a plan they can actually follow.</p>
+                                <div class="program-card__meta">
+                                    <span>10 Weeks</span>
+                                    <span class="program-card__cta">View Program</span>
+                                </div>
+                            </div>
+                        </button>
+                    </article>
+                </div>
+
+                <article class="program-detail reveal is-active" data-reveal data-program-detail style="--delay: 0.26s;">
+                    <div class="program-detail__copy">
+                        <span class="program-detail__kicker" data-program-detail-category>Weight Loss</span>
+                        <h3 data-program-detail-title>Metabolic Reset</h3>
+                        <p data-program-detail-copy>
+                            A structured calorie-deficit system with progressive workouts, weekly check-ins, and habit correction to drive sustainable fat loss.
+                        </p>
+                        <ul class="program-detail__features" data-program-detail-features>
+                            <li>Four strength and conditioning sessions each week</li>
+                            <li>Weekly weight and photo analysis</li>
+                            <li>Cardio targets matched to recovery</li>
+                            <li>Macro adjustments every 14 days</li>
+                        </ul>
+                    </div>
+                    <div class="program-detail__aside">
+                        <span class="program-detail__duration" data-program-detail-duration>12 Weeks</span>
+                        <p>Ideal for clients who want visible change with clear metrics, consistent accountability, and a program that evolves as results come in.</p>
+                        <a class="button button--primary" href="Booking.html" data-program-detail-link>Book This Program</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="pricing-section" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-heading pricing-section__heading reveal" data-reveal style="--delay: 0.08s;">
+                    <span class="section-kicker">Simple Coaching Plans</span>
+                    <h2 id="pricing-title">Simple Coaching Plans</h2>
+                    <p>
+                        Every plan includes structured programming, dashboard access, and measurable progress tracking.
+                        Switch between monthly and yearly billing to see the best fit for your commitment window.
+                    </p>
+                </div>
+
+                <div class="pricing-toggle reveal" data-reveal style="--delay: 0.14s;" role="group" aria-label="Billing frequency">
+                    <button class="pricing-toggle__button is-active" type="button" data-billing-toggle="monthly" aria-pressed="true">Monthly</button>
+                    <button class="pricing-toggle__button" type="button" data-billing-toggle="yearly" aria-pressed="false">
+                        Yearly
+                        <span>Save 20%</span>
+                    </button>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="pricing-card reveal" data-reveal style="--delay: 0.18s;">
+                        <span class="pricing-card__plan">Basic</span>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <strong class="pricing-card__amount" data-price-amount data-monthly="59" data-yearly="47">59</strong>
+                            <span class="pricing-card__cycle">/mo</span>
+                        </div>
+                        <p class="pricing-card__note" data-price-note data-monthly-note="Perfect for steady progress with monthly flexibility." data-yearly-note="Billed yearly for $564 total. Best for long-term consistency.">
+                            Perfect for steady progress with monthly flexibility.
+                        </p>
+                        <ul class="pricing-card__features">
+                            <li>Custom 4-day training split</li>
+                            <li>Monthly macro adjustments</li>
+                            <li>Progress dashboard access</li>
+                            <li>One check-in call each month</li>
+                        </ul>
+                        <a class="button button--outline" href="pricing.html">Choose Basic</a>
+                    </article>
+
+                    <article class="pricing-card pricing-card--featured reveal" data-reveal style="--delay: 0.24s;">
+                        <span class="pricing-card__badge">Most Popular</span>
+                        <span class="pricing-card__plan">Pro</span>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <strong class="pricing-card__amount" data-price-amount data-monthly="89" data-yearly="71">89</strong>
+                            <span class="pricing-card__cycle">/mo</span>
+                        </div>
+                        <p class="pricing-card__note" data-price-note data-monthly-note="Weekly accountability with deeper nutrition support." data-yearly-note="Billed yearly for $852 total. Strongest value for full coaching.">
+                            Weekly accountability with deeper nutrition support.
+                        </p>
+                        <ul class="pricing-card__features">
+                            <li>Custom training and cardio phases</li>
+                            <li>Weekly check-ins and feedback</li>
+                            <li>Macro coaching and meal structure</li>
+                            <li>Video form review and dashboard support</li>
+                        </ul>
+                        <a class="button button--primary" href="Booking.html">Start Pro Coaching</a>
+                    </article>
+
+                    <article class="pricing-card reveal" data-reveal style="--delay: 0.3s;">
+                        <span class="pricing-card__plan">Elite</span>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <strong class="pricing-card__amount" data-price-amount data-monthly="149" data-yearly="119">149</strong>
+                            <span class="pricing-card__cycle">/mo</span>
+                        </div>
+                        <p class="pricing-card__note" data-price-note data-monthly-note="High-touch coaching for advanced body recomposition goals." data-yearly-note="Billed yearly for $1428 total. Premium support with maximum accountability.">
+                            High-touch coaching for advanced body recomposition goals.
+                        </p>
+                        <ul class="pricing-card__features">
+                            <li>Weekly strategy calls and direct support</li>
+                            <li>Advanced nutrition periodization</li>
+                            <li>Priority plan adjustments and reviews</li>
+                            <li>Supplement and recovery protocol guidance</li>
+                        </ul>
+                        <a class="button button--outline" href="Booking.html">Apply for Elite</a>
+                    </article>
+                </div>
+
+                <div class="pricing-comparison reveal" data-reveal style="--delay: 0.36s;">
+                    <div class="pricing-comparison__wrap">
+                        <table class="pricing-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Feature</th>
+                                    <th scope="col">Basic</th>
+                                    <th scope="col">Pro</th>
+                                    <th scope="col">Elite</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Workout Program Updates</th>
+                                    <td>Monthly</td>
+                                    <td>Bi-weekly</td>
+                                    <td>Weekly</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nutrition Coaching</th>
+                                    <td>Essential</td>
+                                    <td>Advanced</td>
+                                    <td>Elite</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Check-ins</th>
+                                    <td>1 / month</td>
+                                    <td>1 / week</td>
+                                    <td>2 / week</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Form Review</th>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Priority Messaging Support</th>
+                                    <td><i class="fa-solid fa-minus" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Custom Supplement Guidance</th>
+                                    <td><i class="fa-solid fa-minus" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-minus" aria-hidden="true"></i></td>
+                                    <td><i class="fa-solid fa-check" aria-hidden="true"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta-section" aria-labelledby="final-cta-title">
+            <div class="container">
+                <div class="final-cta-shell reveal" data-reveal style="--delay: 0.08s;">
+                    <span class="section-kicker final-cta-shell__kicker">Ready To Start</span>
+                    <h2 id="final-cta-title">Start Your Transformation Today</h2>
+                    <p>
+                        Whether your goal is fat loss, muscle gain, or total lifestyle consistency, the next step is a
+                        plan you can follow and a coach who keeps you accountable.
+                    </p>
+                    <div class="final-cta-shell__actions">
+                        <a class="button button--primary" href="Booking.html">Start Training</a>
+                        <a class="button button--outline" href="Booking.html">Book Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <!-- Newsletter -->
+      <section class="footer-newsletter">
+        <div class="container footer-newsletter__inner">
+          <div class="footer-newsletter__content">
+            <h2 id="footer-title">Get Fitness Tips & Weekly Workouts</h2>
+            <p>
+              Join thousands of members receiving training tips, nutrition
+              guides, and motivation.
+            </p>
+          </div>
+
+          <form class="newsletter-form" action="#">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button class="button button--primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a
+            class="brand"
+            href="HomePage-2.html"
+            aria-label="PulseForge Fitness home"
+          >
+            <span class="brand__mark">
+              <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+            </span>
+            <span class="brand__copy">
+              <strong>PulseForge</strong>
+              <small>Performance Coaching</small>
+            </span>
+          </a>
+            <p>
+              Helping people transform their bodies through structured training,
+              nutrition coaching, and sustainable habits.
+            </p>
+
+            <div class="footer-trust">
+              <span>✔ Certified Trainer</span>
+              <span>✔ Proven Programs</span>
+              <span>✔ 1200+ Clients</span>
+            </div>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Programs -->
+          <nav class="footer-links">
+            <h3>Programs</h3>
+            <ul>
+              <li><a href="#">Weight Loss Program</a></li>
+              <li><a href="#">Muscle Building</a></li>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Online Coaching</a></li>
+              <li><a href="#">Nutrition Coaching</a></li>
+            </ul>
+          </nav>
+
+          <!-- Quick Links -->
+          <nav class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Resources -->
+          <nav class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Workout Library</a></li>
+              <li><a href="#">Meal Plans</a></li>
+              <li><a href="#">Fitness Calculator</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: coach@fitcoach.com</li>
+              <li>Phone: +1 (234) 567-890</li>
+              <li>Location: Los Angeles, CA</li>
+              <li>Mon-Fri: 8am – 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <p>© 2026 FitCoach. All rights reserved.</p>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

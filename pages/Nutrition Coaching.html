@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium fitness trainer website header with responsive navigation, dark mode, RTL support, and a high-end hero section."
+    />
+    <title>PulseForge Fitness | Home Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container">
+        <nav class="navbar" aria-label="Primary navigation">
+          <a
+            class="brand"
+            href="HomePage-1.html"
+            aria-label="PulseForge Fitness home"
+          >
+            <span class="brand__mark">
+              <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+            </span>
+            <span class="brand__copy">
+              <strong>PulseForge</strong>
+              <small>Performance Coaching</small>
+            </span>
+          </a>
+
+          <div class="nav-panel" id="site-navigation" data-nav-panel>
+            <ul class="nav-menu">
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Home</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="HomePage-1.html">Home Page 1</a>
+                    <a href="HomePage-2.html">Home Page 2</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Programs</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="WorkoutPlans.html">Workout Plans</a>
+                    <a href="Nutrition Coaching.html">Nutrition Coaching</a>
+                    <a href="pricing.html">Pricing Plans</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item has-dropdown" data-dropdown>
+                <button
+                  class="nav-dropdown-toggle"
+                  type="button"
+                  aria-expanded="false"
+                  data-dropdown-toggle
+                >
+                  <span>Dashboard</span>
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__inner">
+                    <a href="clientdashboard.html">Client Dashboard</a>
+                    <a href="Admindashboard.html">Admin Dashboard</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-tools">
+            <button
+              class="utility-button"
+              type="button"
+              data-rtl-toggle
+              aria-label="Toggle RTL direction"
+            >
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            </button>
+            <button
+              class="utility-button"
+              type="button"
+              data-theme-toggle
+              aria-label="Toggle dark mode"
+            >
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <div class="header-cta">
+              <a class="button button--outline" href="login.html">Login</a>
+              <a class="button button--primary" href="Booking.html">Book Now</a>
+            </div>
+            <button
+              class="menu-button"
+              type="button"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="site-navigation"
+              aria-label="Open menu"
+            >
+              <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <main id="main-content">
+      <section
+        class="nutrition-hero-section"
+        aria-labelledby="nutrition-hero-title"
+      >
+        <div class="container">
+          <div class="nutrition-hero-content">
+            <div
+              class="nutrition-hero-header reveal"
+              data-reveal
+              style="--delay: 0.08s"
+            >
+              <span class="section-kicker">Nutrition Coaching</span>
+
+              <h1 id="nutrition-hero-title">
+                Nutrition Coaching Built for Sustainable Results
+              </h1>
+
+              <p>
+                Personalized nutrition strategies designed to improve energy,
+                body composition, and long-term health.
+              </p>
+
+              <div class="nutrition-hero-actions">
+                <a href="#" class="button button--primary"> View Meal Plans </a>
+
+                <a href="#" class="button button--outline">
+                  Start Nutrition Coaching
+                </a>
+              </div>
+            </div>
+
+            <!-- Nutrition Dashboard -->
+
+            <div
+              class="nutrition-dashboard reveal"
+              data-reveal
+              style="--delay: 0.16s"
+            >
+              <h3>Daily Nutrition Summary</h3>
+
+              <div class="macro-bars">
+                <div class="macro-bar protein">
+                  <span>Protein</span>
+                  <div class="macro-track">
+                    <span style="width: 70%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span>Carbs</span>
+                  <div class="macro-track">
+                    <span style="width: 60%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span>Fat</span>
+                  <div class="macro-track">
+                    <span style="width: 40%"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nutrition-calories">
+                <strong>2100 kcal</strong>
+                <span>Daily Target</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="nutrition-benefits-section"
+        aria-labelledby="nutrition-benefits-title"
+      >
+        <div class="container">
+          <div
+            class="section-heading nutrition-benefits-heading reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">Nutrition Coaching</span>
+
+            <h2 id="nutrition-benefits-title">
+              Benefits of Our Nutrition Programs
+            </h2>
+
+            <p>
+              Our nutrition coaching system helps clients build sustainable
+              habits, optimize performance, and improve long-term health.
+            </p>
+          </div>
+
+          <div class="nutrition-benefits-grid">
+            <!-- card -->
+
+            <article
+              class="nutrition-benefit-card reveal"
+              data-reveal
+              style="--delay: 0.14s"
+            >
+              <span class="nutrition-benefit-icon">
+                <i class="fa-solid fa-utensils"></i>
+              </span>
+
+              <h3>Personalized Meal Plans</h3>
+
+              <p>
+                Custom nutrition plans tailored to your body composition goals,
+                training schedule, and lifestyle.
+              </p>
+            </article>
+
+            <!-- card -->
+
+            <article
+              class="nutrition-benefit-card reveal"
+              data-reveal
+              style="--delay: 0.2s"
+            >
+              <span class="nutrition-benefit-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+              </span>
+
+              <h3>Macro Tracking System</h3>
+
+              <p>
+                Track calories, protein, carbs, and fats with a structured macro
+                system designed for performance and fat loss.
+              </p>
+            </article>
+
+            <!-- card -->
+
+            <article
+              class="nutrition-benefit-card reveal"
+              data-reveal
+              style="--delay: 0.26s"
+            >
+              <span class="nutrition-benefit-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </span>
+
+              <h3>Flexible Diet Strategy</h3>
+
+              <p>
+                Enjoy flexible dieting principles that allow you to stay
+                consistent while maintaining a healthy relationship with food.
+              </p>
+            </article>
+
+            <!-- card -->
+
+            <article
+              class="nutrition-benefit-card reveal"
+              data-reveal
+              style="--delay: 0.32s"
+            >
+              <span class="nutrition-benefit-icon">
+                <i class="fa-solid fa-leaf"></i>
+              </span>
+
+              <h3>Sustainable Lifestyle Habits</h3>
+
+              <p>
+                Develop long-term nutrition habits that support strength,
+                recovery, and overall health.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+            <section class="meal-plan-section" aria-labelledby="meal-plan-title">
+        <div class="container">
+          <div
+            class="section-heading meal-plan__heading reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">Strategic Nutrition</span>
+            <h2 id="meal-plan-title">Meal Plans That Fit Your Goal</h2>
+            <p>
+              Filter sample meal plans by goal style, preview the daily meal
+              structure, and see how calories and macros are balanced for each
+              approach.
+            </p>
+          </div>
+
+          <div
+            class="meal-tabs reveal"
+            data-reveal
+            style="--delay: 0.14s"
+            role="tablist"
+            aria-label="Meal plan categories"
+          >
+            <button
+              class="meal-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-meal-filter="weight-loss"
+              data-summary-calories="2100"
+              data-summary-protein="185"
+              data-summary-carbs="170"
+              data-summary-fat="62"
+            >
+              Weight Loss
+            </button>
+            <button
+              class="meal-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-meal-filter="muscle-gain"
+              data-summary-calories="2860"
+              data-summary-protein="220"
+              data-summary-carbs="320"
+              data-summary-fat="78"
+            >
+              Muscle Gain
+            </button>
+            <button
+              class="meal-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-meal-filter="keto"
+              data-summary-calories="2350"
+              data-summary-protein="175"
+              data-summary-carbs="58"
+              data-summary-fat="154"
+            >
+              Keto
+            </button>
+            <button
+              class="meal-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-meal-filter="vegan"
+              data-summary-calories="2240"
+              data-summary-protein="162"
+              data-summary-carbs="258"
+              data-summary-fat="64"
+            >
+              Vegan
+            </button>
+          </div>
+
+          <div
+            class="meal-grid reveal"
+            data-reveal
+            data-meal-grid
+            style="--delay: 0.2s"
+          >
+            <article
+              class="meal-card"
+              data-meal-card
+              data-category="weight-loss vegan"
+            >
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80"
+                  alt="Berry protein oats breakfast"
+                />
+                <span class="meal-card__type">Breakfast</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Berry Protein Oats</h3>
+                <p>
+                  Overnight oats with soy yogurt, berries, chia, and plant
+                  protein.
+                </p>
+                <div class="meal-card__stats">
+                  <span>410 kcal</span>
+                  <span>P 32g</span>
+                  <span>C 48g</span>
+                  <span>F 11g</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="meal-card"
+              data-meal-card
+              data-category="weight-loss muscle-gain"
+            >
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80"
+                  alt="Chicken macro bowl lunch"
+                />
+                <span class="meal-card__type">Lunch</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Chicken Macro Bowl</h3>
+                <p>
+                  Grilled chicken, jasmine rice, greens, avocado, and lemon
+                  dressing.
+                </p>
+                <div class="meal-card__stats">
+                  <span>590 kcal</span>
+                  <span>P 48g</span>
+                  <span>C 54g</span>
+                  <span>F 18g</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="meal-card"
+              data-meal-card
+              data-category="weight-loss muscle-gain keto"
+            >
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80"
+                  alt="Salmon recovery plate dinner"
+                />
+                <span class="meal-card__type">Dinner</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Salmon Recovery Plate</h3>
+                <p>
+                  Roasted salmon, asparagus, baby potatoes, and herb yogurt
+                  sauce.
+                </p>
+                <div class="meal-card__stats">
+                  <span>640 kcal</span>
+                  <span>P 44g</span>
+                  <span>C 28g</span>
+                  <span>F 34g</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="meal-card"
+              data-meal-card
+              data-category="weight-loss muscle-gain"
+            >
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=80"
+                  alt="Greek yogurt crunch snack"
+                />
+                <span class="meal-card__type">Snacks</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Greek Yogurt Crunch</h3>
+                <p>
+                  Greek yogurt with berries, granola, and almond butter drizzle.
+                </p>
+                <div class="meal-card__stats">
+                  <span>280 kcal</span>
+                  <span>P 24g</span>
+                  <span>C 20g</span>
+                  <span>F 10g</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="meal-card" data-meal-card data-category="keto">
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80"
+                  alt="Avocado egg skillet breakfast"
+                />
+                <span class="meal-card__type">Breakfast</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Avocado Egg Skillet</h3>
+                <p>
+                  Eggs, avocado, sauteed spinach, feta, and olive oil drizzle.
+                </p>
+                <div class="meal-card__stats">
+                  <span>520 kcal</span>
+                  <span>P 29g</span>
+                  <span>C 12g</span>
+                  <span>F 39g</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="meal-card" data-meal-card data-category="vegan">
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80"
+                  alt="Tofu grain lunch bowl"
+                />
+                <span class="meal-card__type">Lunch</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Tofu Grain Power Bowl</h3>
+                <p>
+                  Crispy tofu, quinoa, edamame, slaw, and tahini-lime dressing.
+                </p>
+                <div class="meal-card__stats">
+                  <span>560 kcal</span>
+                  <span>P 34g</span>
+                  <span>C 58g</span>
+                  <span>F 18g</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="meal-card"
+              data-meal-card
+              data-category="muscle-gain keto"
+            >
+              <div class="meal-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+                  alt="Steak greens dinner"
+                />
+                <span class="meal-card__type">Dinner</span>
+              </div>
+              <div class="meal-card__body">
+                <h3>Steak Greens Plate</h3>
+                <p>
+                  Sirloin steak, charred greens, roasted mushrooms, and garlic
+                  butter.
+                </p>
+                <div class="meal-card__stats">
+                  <span>710 kcal</span>
+                  <span>P 52g</span>
+                  <span>C 16g</span>
+                  <span>F 42g</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- <article class="meal-card" data-meal-card data-category="vegan weight-loss">
+                        <div class="meal-card__media">
+                            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=900&q=80" alt="Protein bites snack">
+                            <span class="meal-card__type">Snacks</span>
+                        </div>
+                        <div class="meal-card__body">
+                            <h3>Protein Energy Bites</h3>
+                            <p>Date-free protein bites with cacao, almond meal, and hemp hearts.</p>
+                            <div class="meal-card__stats">
+                                <span>240 kcal</span>
+                                <span>P 18g</span>
+                                <span>C 16g</span>
+                                <span>F 11g</span>
+                            </div>
+                        </div>
+                    </article> -->
+          </div>
+
+          <article
+            class="nutrition-summary reveal"
+            data-reveal
+            style="--delay: 0.26s"
+          >
+            <div class="nutrition-summary__hero">
+              <span class="nutrition-summary__label"
+                >Daily Nutrition Target</span
+              >
+              <strong><span data-meal-summary-calories>2100</span> kcal</strong>
+              <p>
+                Balanced to support your selected goal while keeping food
+                quality, recovery, and compliance high.
+              </p>
+            </div>
+            <div class="nutrition-summary__metrics">
+              <article class="nutrition-metric">
+                <div class="nutrition-metric__top">
+                  <h3>Protein</h3>
+                  <span><span data-meal-summary-protein>185</span>g</span>
+                </div>
+                <div class="nutrition-metric__bar">
+                  <span data-meal-summary-protein-bar style="width: 74%"></span>
+                </div>
+              </article>
+              <article class="nutrition-metric">
+                <div class="nutrition-metric__top">
+                  <h3>Carbs</h3>
+                  <span><span data-meal-summary-carbs>170</span>g</span>
+                </div>
+                <div
+                  class="nutrition-metric__bar nutrition-metric__bar--secondary"
+                >
+                  <span data-meal-summary-carbs-bar style="width: 57%"></span>
+                </div>
+              </article>
+              <article class="nutrition-metric">
+                <div class="nutrition-metric__top">
+                  <h3>Fat</h3>
+                  <span><span data-meal-summary-fat>62</span>g</span>
+                </div>
+                <div
+                  class="nutrition-metric__bar nutrition-metric__bar--tertiary"
+                >
+                  <span data-meal-summary-fat-bar style="width: 62%"></span>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="meal-plan-preview-section"
+        aria-labelledby="meal-plan-title"
+      >
+        <div class="container">
+          <div
+            class="section-heading meal-plan-heading reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">Sample Meal Plan</span>
+
+            <h2 id="meal-plan-title">Daily Nutrition Plan Example</h2>
+
+            <p>
+              A structured meal schedule designed to fuel performance, support
+              recovery, and maintain balanced nutrition.
+            </p>
+          </div>
+
+          <div class="meal-timeline">
+            <!-- Breakfast -->
+
+            <article
+              class="meal-card reveal"
+              data-reveal
+              style="--delay: 0.14s"
+            >
+              <span class="meal-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+              </span>
+
+              <h3>Breakfast</h3>
+
+              <p class="meal-name">Oatmeal with Protein & Berries</p>
+
+              <div class="meal-calories">450 kcal</div>
+
+              <div class="macro-bars">
+                <div class="macro-bar protein">
+                  <span>Protein</span>
+                  <div class="macro-track">
+                    <span style="width: 40%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span>Carbs</span>
+                  <div class="macro-track">
+                    <span style="width: 60%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span>Fat</span>
+                  <div class="macro-track">
+                    <span style="width: 25%"></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Lunch -->
+
+            <article class="meal-card reveal" data-reveal style="--delay: 0.2s">
+              <span class="meal-icon">
+                <i class="fa-solid fa-bowl-food"></i>
+              </span>
+
+              <h3>Lunch</h3>
+
+              <p class="meal-name">Grilled Chicken & Quinoa Bowl</p>
+
+              <div class="meal-calories">620 kcal</div>
+
+              <div class="macro-bars">
+                <div class="macro-bar protein">
+                  <span>Protein</span>
+                  <div class="macro-track">
+                    <span style="width: 55%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span>Carbs</span>
+                  <div class="macro-track">
+                    <span style="width: 50%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span>Fat</span>
+                  <div class="macro-track">
+                    <span style="width: 30%"></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Snack -->
+
+            <article
+              class="meal-card reveal"
+              data-reveal
+              style="--delay: 0.26s"
+            >
+              <span class="meal-icon">
+                <i class="fa-solid fa-apple-whole"></i>
+              </span>
+
+              <h3>Snack</h3>
+
+              <p class="meal-name">Greek Yogurt & Almonds</p>
+
+              <div class="meal-calories">280 kcal</div>
+
+              <div class="macro-bars">
+                <div class="macro-bar protein">
+                  <span>Protein</span>
+                  <div class="macro-track">
+                    <span style="width: 45%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span>Carbs</span>
+                  <div class="macro-track">
+                    <span style="width: 30%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span>Fat</span>
+                  <div class="macro-track">
+                    <span style="width: 35%"></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dinner -->
+
+            <article
+              class="meal-card reveal"
+              data-reveal
+              style="--delay: 0.32s"
+            >
+              <span class="meal-icon">
+                <i class="fa-solid fa-drumstick-bite"></i>
+              </span>
+
+              <h3>Dinner</h3>
+
+              <p class="meal-name">Salmon, Rice & Vegetables</p>
+
+              <div class="meal-calories">650 kcal</div>
+
+              <div class="macro-bars">
+                <div class="macro-bar protein">
+                  <span>Protein</span>
+                  <div class="macro-track">
+                    <span style="width: 60%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span>Carbs</span>
+                  <div class="macro-track">
+                    <span style="width: 45%"></span>
+                  </div>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span>Fat</span>
+                  <div class="macro-track">
+                    <span style="width: 40%"></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="nutrition-tracking-section" aria-labelledby="macro-title">
+        <div class="container">
+          <div
+            class="section-heading nutrition-tracking-heading reveal"
+            data-reveal
+            style="--delay: 0.08s"
+          >
+            <span class="section-kicker">Macro Tracking</span>
+
+            <h2 id="macro-title">Daily Nutrition Tracking</h2>
+
+            <p>
+              Monitor your calorie intake and macro balance to ensure your
+              nutrition supports your training goals and recovery.
+            </p>
+          </div>
+
+          <div
+            class="nutrition-dashboard-grid reveal"
+            data-reveal
+            style="--delay: 0.16s"
+          >
+            <!-- Calories -->
+
+            <div class="macro-summary-card">
+              <h3>Daily Calories</h3>
+
+              <strong class="calorie-number"> 2100 kcal </strong>
+
+              <span class="calorie-target"> Target: 2400 kcal </span>
+            </div>
+
+            <!-- Macro bars -->
+
+            <div class="macro-progress-panel">
+              <div class="macro-progress">
+                <div class="macro-header">
+                  <span>Protein</span>
+                  <span class="macro-percent">35%</span>
+                </div>
+
+                <div class="macro-bar protein">
+                  <span style="width: 35%"></span>
+                </div>
+              </div>
+
+              <div class="macro-progress">
+                <div class="macro-header">
+                  <span>Carbohydrates</span>
+                  <span class="macro-percent">45%</span>
+                </div>
+
+                <div class="macro-bar carbs">
+                  <span style="width: 45%"></span>
+                </div>
+              </div>
+
+              <div class="macro-progress">
+                <div class="macro-header">
+                  <span>Fat</span>
+                  <span class="macro-percent">20%</span>
+                </div>
+
+                <div class="macro-bar fats">
+                  <span style="width: 20%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <!-- Newsletter -->
+      <section class="footer-newsletter">
+        <div class="container footer-newsletter__inner">
+          <div class="footer-newsletter__content">
+            <h2 id="footer-title">Get Fitness Tips & Weekly Workouts</h2>
+            <p>
+              Join thousands of members receiving training tips, nutrition
+              guides, and motivation.
+            </p>
+          </div>
+
+          <form class="newsletter-form" action="#">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button class="button button--primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a
+              class="brand"
+              href="HomePage-2.html"
+              aria-label="PulseForge Fitness home"
+            >
+              <span class="brand__mark">
+                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+              </span>
+              <span class="brand__copy">
+                <strong>PulseForge</strong>
+                <small>Performance Coaching</small>
+              </span>
+            </a>
+            <p>
+              Helping people transform their bodies through structured training,
+              nutrition coaching, and sustainable habits.
+            </p>
+
+            <div class="footer-trust">
+              <span>✔ Certified Trainer</span>
+              <span>✔ Proven Programs</span>
+              <span>✔ 1200+ Clients</span>
+            </div>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Programs -->
+          <nav class="footer-links">
+            <h3>Programs</h3>
+            <ul>
+              <li><a href="#">Weight Loss Program</a></li>
+              <li><a href="#">Muscle Building</a></li>
+              <li><a href="#">Strength Training</a></li>
+              <li><a href="#">Online Coaching</a></li>
+              <li><a href="#">Nutrition Coaching</a></li>
+            </ul>
+          </nav>
+
+          <!-- Quick Links -->
+          <nav class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Resources -->
+          <nav class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Workout Library</a></li>
+              <li><a href="#">Meal Plans</a></li>
+              <li><a href="#">Fitness Calculator</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: coach@fitcoach.com</li>
+              <li>Phone: +1 (234) 567-890</li>
+              <li>Location: Los Angeles, CA</li>
+              <li>Mon-Fri: 8am – 6pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <p>© 2026 FitCoach. All rights reserved.</p>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

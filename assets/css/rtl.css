@@ -1,0 +1,994 @@
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .navbar {
+    direction: ltr;
+}
+
+html[dir="rtl"] .hero-section,
+html[dir="rtl"] .hero-shell,
+html[dir="rtl"] .hero-copy-block,
+html[dir="rtl"] .hero-glass-card,
+html[dir="rtl"] .stats-section,
+html[dir="rtl"] .transform-section,
+html[dir="rtl"] .programs-section,
+html[dir="rtl"] .pricing-section,
+html[dir="rtl"] .final-cta-section,
+html[dir="rtl"] .hero-alt-section,
+html[dir="rtl"] .programs-spotlight-section,
+html[dir="rtl"] .meal-plan-section,
+html[dir="rtl"] .certifications-section,
+html[dir="rtl"] .testimonials-section,
+html[dir="rtl"] .conversion-cta-section,
+html[dir="rtl"] .hero-section,
+html[dir="rtl"] .hero-shell {
+    direction: rtl;
+}
+
+html[dir="rtl"] .nav-panel {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .nav-menu {
+    direction: rtl;
+}
+
+html[dir="rtl"] .nav-dropdown-toggle {
+    direction: rtl;
+}
+
+html[dir="rtl"] .header-tools {
+    direction: rtl;
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .header-cta {
+    direction: rtl;
+}
+
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .hero-social-proof {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero-floating-cards,
+html[dir="rtl"] .stats-progress,
+html[dir="rtl"] .transform-metrics,
+html[dir="rtl"] .program-tabs,
+html[dir="rtl"] .program-detail,
+html[dir="rtl"] .pricing-toggle,
+html[dir="rtl"] .final-cta-shell__actions,
+html[dir="rtl"] .hero-alt-actions,
+html[dir="rtl"] .hero-alt-rating,
+html[dir="rtl"] .meal-tabs,
+html[dir="rtl"] .trainer-profile-card__stats,
+html[dir="rtl"] .featured-testimonial__meta,
+html[dir="rtl"] .conversion-cta-shell__actions,
+html[dir="rtl"] .conversion-cta-shell__trust,
+html[dir="rtl"] .conversion-cta-shell__social {
+    direction: rtl;
+}
+
+html[dir="rtl"] .transform-showcase,
+html[dir="rtl"] .programs-grid,
+html[dir="rtl"] .pricing-grid,
+html[dir="rtl"] .hero-alt-grid,
+html[dir="rtl"] .meal-grid,
+html[dir="rtl"] .certifications-layout,
+html[dir="rtl"] .cert-badges-grid,
+html[dir="rtl"] .testimonials-layout,
+html[dir="rtl"] .testimonial-metrics {
+    direction: rtl;
+}
+
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .dropdown-menu a {
+    text-align: right;
+}
+
+html[dir="rtl"] .hero-shell,
+html[dir="rtl"] .hero-copy-block,
+html[dir="rtl"] .hero-glass-card,
+html[dir="rtl"] .hero-rating {
+    text-align: right;
+}
+
+html[dir="rtl"] .stats-orbit {
+    grid-template-areas:
+        "small-two featured small-one"
+        "small-four featured small-three";
+}
+
+html[dir="rtl"] .stat-card--small,
+html[dir="rtl"] .progress-stat {
+    text-align: right;
+}
+
+html[dir="rtl"] .stat-card__value,
+html[dir="rtl"] .stat-card__featured-value,
+html[dir="rtl"] .progress-stat__top span,
+html[dir="rtl"] .mini-metric-card strong,
+html[dir="rtl"] .program-detail__duration,
+html[dir="rtl"] .pricing-card__price {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .transform-story-card,
+html[dir="rtl"] .transform-gallery-card__overlay,
+html[dir="rtl"] .mini-metric-card,
+html[dir="rtl"] .program-card__trigger,
+html[dir="rtl"] .program-detail__copy,
+html[dir="rtl"] .program-detail__aside,
+html[dir="rtl"] .pricing-card,
+html[dir="rtl"] .pricing-table tbody th,
+html[dir="rtl"] .pricing-table thead th:first-child,
+html[dir="rtl"] .hero-alt-copy,
+html[dir="rtl"] .hero-alt-rating__text,
+html[dir="rtl"] .meal-card__body,
+html[dir="rtl"] .nutrition-summary__hero,
+html[dir="rtl"] .nutrition-metric,
+html[dir="rtl"] .trainer-profile-card__body,
+html[dir="rtl"] .timeline-milestone__content,
+html[dir="rtl"] .featured-testimonial__body,
+html[dir="rtl"] .review-card,
+html[dir="rtl"] .conversion-cta-shell {
+    text-align: right;
+}
+
+html[dir="rtl"] .transform-story-card__meta,
+html[dir="rtl"] .program-card__meta,
+html[dir="rtl"] .pricing-toggle,
+html[dir="rtl"] .hero-alt-rating,
+html[dir="rtl"] .meal-card__stats,
+html[dir="rtl"] .trainer-profile-card__stats,
+html[dir="rtl"] .featured-testimonial__meta,
+html[dir="rtl"] .conversion-cta-shell__actions,
+html[dir="rtl"] .conversion-cta-shell__trust,
+html[dir="rtl"] .conversion-cta-shell__social {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .reviews-slider__top,
+html[dir="rtl"] .review-card__head {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .reviews-slider__controls {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .reviews-slider__viewport,
+html[dir="rtl"] .reviews-slider__track {
+    direction: ltr;
+}
+
+html[dir="rtl"] .featured-testimonial__meta strong {
+    margin-right: 0;
+    margin-left: 0.35rem;
+}
+
+html[dir="rtl"] .video-modal__close {
+    right: auto;
+    left: 16px;
+}
+
+html[dir="rtl"] .transform-story-card__list li,
+html[dir="rtl"] .program-detail__features li,
+html[dir="rtl"] .pricing-card__features li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+html[dir="rtl"] .transform-story-card__list li::before,
+html[dir="rtl"] .program-detail__features li::before,
+html[dir="rtl"] .pricing-card__features li::before {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .meal-card__type {
+    left: auto;
+    right: 16px;
+}
+
+html[dir="rtl"] .nutrition-metric__top {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .timeline-milestone {
+    grid-template-columns: minmax(0, 1fr) 110px;
+}
+
+html[dir="rtl"] .achievements-timeline::before {
+    left: auto;
+    right: 86px;
+}
+
+html[dir="rtl"] .timeline-milestone__year::after {
+    right: auto;
+    left: -16px;
+}
+
+html[dir="rtl"] .comparison-label--before {
+    left: auto;
+    right: 18px;
+}
+
+html[dir="rtl"] .comparison-label--after {
+    right: auto;
+    left: 18px;
+}
+
+html[dir="rtl"] .transform-gallery-card__media::before {
+    left: auto;
+    right: 14px;
+}
+
+html[dir="rtl"] .transform-gallery-card__media::after {
+    right: auto;
+    left: 14px;
+}
+
+html[dir="rtl"] .comparison-range {
+    direction: ltr;
+}
+
+html[dir="rtl"] .dashboard-mockup {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .floating-ui-card--calories {
+    left: auto;
+    right: 10px;
+}
+
+html[dir="rtl"] .floating-ui-card--progress {
+    right: auto;
+    left: -8px;
+}
+
+html[dir="rtl"] .floating-ui-card--steps {
+    left: auto;
+    right: 52px;
+}
+
+html[dir="rtl"] .progress-stat__top {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .progress-track span {
+    transform-origin: right center;
+}
+
+html[dir="rtl"] .avatar-stack {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .avatar-stack img {
+    margin-left: 0;
+    margin-right: -14px;
+}
+
+html[dir="rtl"] .avatar-stack img:first-child {
+    margin-right: 0;
+}
+html[dir="rtl"] .about-hero-section,
+html[dir="rtl"] .founder-section,
+html[dir="rtl"] .mission-section,
+html[dir="rtl"] .method-section,
+html[dir="rtl"] .timeline-section,
+html[dir="rtl"] .gallery-section {
+    direction: rtl;
+}
+html[dir="rtl"] .about-hero-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-hero-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .about-certifications {
+    flex-direction: row-reverse;
+}
+html[dir="rtl"] .founder-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .founder-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .founder-credentials {
+    flex-direction: row-reverse;
+}
+html[dir="rtl"] .founder-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .founder-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .founder-credentials {
+    flex-direction: row-reverse;
+}
+html[dir="rtl"] .mission-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .mission-card {
+    text-align: right;
+}
+html[dir="rtl"] .timeline-item {
+    direction: rtl;
+}
+
+html[dir="rtl"] .timeline-year {
+    text-align: left;
+}
+
+html[dir="rtl"] .timeline-wrapper::before {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+html[dir="rtl"] .gallery-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .gallery-heading {
+    text-align: center;
+}
+html[dir="rtl"] .gallery-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .gallery-heading {
+    text-align: center;
+}
+html[dir="rtl"] .workout-hero-v2,
+html[dir="rtl"] .workout-programs-section,
+html[dir="rtl"] .program-selector-section,
+html[dir="rtl"] .weekly-planner-section,
+html[dir="rtl"] .program-benefits-section {
+    direction: rtl;
+}
+html[dir="rtl"] .workout-hero-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .dashboard-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .dashboard-progress {
+    text-align: right;
+}
+html[dir="rtl"] .workout-programs-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .workout-program-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .program-meta {
+    direction: rtl;
+}
+html[dir="rtl"] .workout-programs-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .workout-program-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .program-meta {
+    direction: rtl;
+}
+html[dir="rtl"] .program-tabs {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .program-panel-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .program-panel-card {
+    text-align: right;
+}
+html[dir="rtl"] .weekly-planner-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .planner-day-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .planner-meta {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .planner-meta span:first-child {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+html[dir="rtl"] .weekly-planner-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .planner-day-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .planner-meta {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .planner-meta span:first-child {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+html[dir="rtl"] .conversion-cta-shell {
+    text-align: right;
+}
+
+html[dir="rtl"] .conversion-cta-shell__actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .conversion-cta-shell__trust {
+    flex-direction: row-reverse;
+}
+/* ========================================
+   RTL SUPPORT – NUTRITION & PRICING PAGES
+======================================== */
+
+/* base direction */
+
+html[dir="rtl"] .nutrition-benefits-section,
+html[dir="rtl"] .meal-plan-preview-section,
+html[dir="rtl"] .nutrition-tracking-section,
+html[dir="rtl"] .pricing-hero-section,
+html[dir="rtl"] .pricing-cta-section{
+direction: rtl;
+}
+
+
+/* headings */
+
+html[dir="rtl"] .nutrition-benefits-heading,
+html[dir="rtl"] .meal-plan-heading,
+html[dir="rtl"] .nutrition-tracking-heading,
+html[dir="rtl"] .pricing-hero-header,
+html[dir="rtl"] .pricing-cta-shell{
+text-align:right;
+}
+
+
+/* buttons */
+
+html[dir="rtl"] .pricing-hero-actions,
+html[dir="rtl"] .pricing-cta-actions{
+flex-direction:row-reverse;
+}
+
+
+/* trust badges */
+
+html[dir="rtl"] .pricing-cta-trust{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .cta-trust-item{
+flex-direction:row-reverse;
+}
+
+
+/* pricing preview cards */
+
+html[dir="rtl"] .pricing-preview-grid{
+direction:rtl;
+}
+
+html[dir="rtl"] .pricing-preview-card{
+text-align:right;
+}
+
+
+/* nutrition benefits */
+
+html[dir="rtl"] .nutrition-benefits-grid{
+direction:rtl;
+}
+
+html[dir="rtl"] .nutrition-benefit-card{
+text-align:right;
+}
+
+
+/* meal cards */
+
+html[dir="rtl"] .meal-timeline{
+direction:rtl;
+}
+
+html[dir="rtl"] .meal-card{
+text-align:right;
+}
+
+
+/* macro tracking */
+
+html[dir="rtl"] .nutrition-dashboard-grid{
+direction:rtl;
+}
+
+html[dir="rtl"] .macro-progress-panel{
+text-align:right;
+}
+
+html[dir="rtl"] .macro-header{
+flex-direction:row-reverse;
+}
+
+
+/* keep numbers LTR */
+
+html[dir="rtl"] .macro-percent,
+html[dir="rtl"] .calorie-number{
+direction:ltr;
+unicode-bidi:isolate;
+}
+
+
+/* icon spacing */
+
+html[dir="rtl"] .nutrition-benefit-icon,
+html[dir="rtl"] .meal-icon,
+html[dir="rtl"] .pricing-card-icon{
+margin-left:0;
+margin-right:0;
+}
+html[dir="rtl"] .blog-search{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .blog-categories{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .blog-meta{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .blog-card-content{
+text-align:right;
+}
+html[dir="rtl"] .blog-card-body{
+text-align:right;
+}
+
+html[dir="rtl"] .blog-card-meta{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .blog-category-badge{
+left:auto;
+right:14px;
+}
+html[dir="rtl"] .trending-layout{
+direction:rtl;
+}
+
+html[dir="rtl"] .trending-meta{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .trending-category{
+left:auto;
+right:14px;
+}
+
+html[dir="rtl"] .trending-item{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .trending-item-content{
+text-align:right;
+}
+/* ========================================
+   CONTACT HERO RTL
+======================================== */
+
+html[dir="rtl"] .contact-hero-shell{
+text-align:center;
+}
+
+html[dir="rtl"] .contact-hero-actions{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .contact-info-grid{
+direction:rtl;
+}
+
+html[dir="rtl"] .contact-card{
+text-align:center;
+}
+html[dir="rtl"] .contact-form-grid{
+direction:rtl;
+}
+
+html[dir="rtl"] .form-group{
+text-align:right;
+}
+
+html[dir="rtl"] .contact-form-side{
+text-align:right;
+}
+html[dir="rtl"] .studio-info{
+
+left:auto;
+right:30px;
+
+text-align:right;
+
+}
+
+html[dir="rtl"] .dashboard-layout{
+flex-direction:row;
+}
+
+html[dir="rtl"] .dashboard-sidebar{
+left:0;
+right:auto;
+transform:translateX(0);
+}
+html[dir="rtl"] .dashboard-menu{
+text-align:right;
+}
+
+html[dir="rtl"] .menu-link{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .menu-link span{
+text-align:right;
+}
+
+html[dir="rtl"] .dashboard-content{
+text-align:right;
+}
+
+html[dir="rtl"] .dashboard-overview__header{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .dashboard-overview__actions{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .workout-tabs{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .plan-meta{
+direction:rtl;
+}
+
+html[dir="rtl"] .workout-list li,
+html[dir="rtl"] .meal-log li,
+html[dir="rtl"] .upcoming-sessions li{
+flex-direction:row-reverse;
+text-align:right;
+}
+
+html[dir="rtl"] .workout-tag,
+html[dir="rtl"] .meal-kcal,
+html[dir="rtl"] .session-chip{
+direction:ltr;
+}
+
+html[dir="rtl"] .weekly-split{
+direction:rtl;
+}
+
+html[dir="rtl"] .exercise-detail{
+text-align:right;
+}
+
+html[dir="rtl"] .timer-ui{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .macro-label{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .progress-meta{
+flex-direction:row-reverse;
+text-align:right;
+}
+
+html[dir="rtl"] .analytics-metrics{
+text-align:right;
+}
+
+html[dir="rtl"] .schedule-days{
+direction:rtl;
+}
+
+html[dir="rtl"] .schedule-day{
+text-align:right;
+}
+
+html[dir="rtl"] .schedule-meta{
+text-align:right;
+}
+
+html[dir="rtl"] .progress-fill{
+margin-left:auto;
+}
+
+html[dir="rtl"] .dashboard-summary-card{
+flex-direction:row-reverse;
+text-align:right;
+}
+
+html[dir="rtl"] .chart-header{
+flex-direction:row-reverse;
+text-align:right;
+}
+
+html[dir="rtl"] .macro-legend{
+direction:rtl;
+}
+
+html[dir="rtl"] .weekly-activity li{
+grid-template-columns:48px minmax(0,1fr) 48px;
+}
+
+html[dir="rtl"] .weekly-activity strong{
+text-align:left;
+}
+
+html[dir="rtl"] .notification-dropdown{
+right:auto;
+left:0;
+}
+
+html[dir="rtl"] .notification-dropdown__header{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .notification-item__button{
+flex-direction:row-reverse;
+text-align:right;
+}
+
+html[dir="rtl"] .notification-item__content{
+text-align:right;
+}
+
+html[dir="rtl"] .notification-dropdown__footer{
+text-align:right;
+}
+
+html[dir="rtl"] .profile-toggle{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .profile-menu{
+left:0;
+right:auto;
+}
+
+
+
+@media (max-width:1024px){
+
+html[dir="rtl"] .pricing-hero-actions{
+justify-content:flex-start;
+}
+
+html[dir="rtl"] .pricing-cta-actions{
+flex-direction:column;
+}
+
+}
+@media (max-width: 991px) {
+    html[dir="rtl"] .nav-panel {
+        right: 16px;
+        left: 16px;
+    }
+
+    html[dir="rtl"] .header-tools {
+        direction: ltr;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    html[dir="rtl"] .nav-menu {
+        align-items: stretch;
+    }
+
+    html[dir="rtl"] .nav-link,
+    html[dir="rtl"] .nav-dropdown-toggle {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .stats-orbit {
+        grid-template-areas:
+            "featured featured"
+            "small-one small-two"
+            "small-three small-four";
+    }
+
+    html[dir="rtl"] .program-tabs {
+        justify-content: flex-start;
+    }
+
+    html[dir="rtl"] .dashboard-layout{
+        flex-direction:column;
+    }
+
+    html[dir="rtl"] .dashboard-sidebar{
+        left:0;
+        right:auto;
+        transform:translateX(-100%);
+    }
+
+    html[dir="rtl"] .dashboard-sidebar.is-open{
+        transform:translateX(0);
+    }
+
+    html[dir="rtl"] .dashboard-mockup {
+        margin-inline: auto;
+    }
+
+    html[dir="rtl"] .nutrition-metric__top {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .hero-social-proof {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .hero-rating {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .notification-dropdown{
+        left:16px;
+        right:16px;
+    }
+
+    html[dir="rtl"] .stats-orbit {
+        grid-template-areas:
+            "featured"
+            "small-one"
+            "small-two"
+            "small-three"
+            "small-four";
+    }
+
+    html[dir="rtl"] .progress-stat__top {
+        align-items: flex-end;
+    }
+
+    html[dir="rtl"] .transform-story-card__meta,
+    html[dir="rtl"] .program-card__meta {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    html[dir="rtl"] .pricing-toggle,
+    html[dir="rtl"] .final-cta-shell__actions {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .hero-alt-rating {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .hero-alt-rating__text {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .floating-ui-card--calories {
+        right: 0;
+    }
+
+    html[dir="rtl"] .floating-ui-card--progress {
+        left: 0;
+    }
+
+    html[dir="rtl"] .floating-ui-card--steps {
+        right: 16px;
+    }
+
+    html[dir="rtl"] .meal-tabs,
+    html[dir="rtl"] .trainer-profile-card__stats,
+    html[dir="rtl"] .featured-testimonial__meta,
+    html[dir="rtl"] .conversion-cta-shell__actions,
+    html[dir="rtl"] .conversion-cta-shell__trust,
+    html[dir="rtl"] .conversion-cta-shell__social {
+        flex-direction: column;
+    }
+
+    html[dir="rtl"] .nutrition-metric__top {
+        align-items: flex-end;
+    }
+
+    html[dir="rtl"] .timeline-milestone {
+        grid-template-columns: 1fr;
+    }
+
+    html[dir="rtl"] .achievements-timeline::before {
+        right: 21px;
+        left: auto;
+    }
+
+    html[dir="rtl"] .timeline-milestone__year::after {
+        left: auto;
+        right: 14px;
+    }
+
+    html[dir="rtl"] .reviews-slider__top {
+        align-items: flex-end;
+    }
+
+    html[dir="rtl"] .reviews-slider__controls {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .video-modal__close {
+        left: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    html[dir="rtl"] .reviews-slider__top {
+        align-items: stretch;
+    }
+}
+@media (max-width:640px){
+
+html[dir="rtl"] .program-tabs {
+    flex-direction: column;
+}
+
+html[dir="rtl"] .planner-meta {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+html[dir="rtl"] .conversion-cta-shell__actions {
+    flex-direction: column;
+}
+html[dir="rtl"] .pricing-hero-actions{
+flex-direction:column;
+}
+
+html[dir="rtl"] .pricing-cta-trust{
+flex-direction:column;
+align-items:flex-end;
+}
+
+html[dir="rtl"] .macro-header{
+flex-direction:row-reverse;
+}
+}
