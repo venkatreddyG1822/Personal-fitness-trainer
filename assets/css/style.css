@@ -11035,6 +11035,7 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
+position:relative;
 
 background:
 radial-gradient(circle at 10% 20%, rgba(141,255,47,0.12), transparent 25%),
@@ -11120,6 +11121,52 @@ border:1px solid var(--border-color);
 
 box-shadow:0 30px 80px rgba(0,0,0,0.4);
 backdrop-filter:blur(20px);
+}
+
+/* AUTH TOOLS + BRAND */
+
+.auth-tools{
+position:absolute;
+top:24px;
+right:24px;
+display:flex;
+gap:10px;
+z-index:4;
+}
+
+.auth-tools .utility-button{
+background:rgba(255,255,255,0.08);
+border-color:rgba(255,255,255,0.2);
+color:#ffffff;
+backdrop-filter:blur(12px);
+}
+
+.auth-tools .utility-button:hover,
+.auth-tools .utility-button:focus-visible{
+border-color:rgba(141,255,47,0.45);
+color:var(--accent-color);
+}
+
+.auth-brand{
+display:inline-flex;
+align-items:center;
+gap:12px;
+margin-bottom:1.5rem;
+text-decoration:none;
+}
+
+.auth-brand .brand__mark{
+width:46px;
+height:46px;
+border-radius:16px;
+}
+
+.auth-brand .brand__copy strong{
+color:#ffffff;
+}
+
+.auth-brand .brand__copy small{
+color:rgba(255,255,255,0.65);
 }
 
 /* HEADER */
@@ -11339,6 +11386,11 @@ display:none;
 
 
 @media (max-width:640px){
+
+.auth-tools{
+top:16px;
+right:16px;
+}
 
 .auth-form{
 padding:1.8rem 1.4rem;
