@@ -8153,6 +8153,18 @@ text-transform:uppercase;
 color:var(--accent-color);
 }
 
+.dashboard-title{
+margin:0;
+font-size:clamp(1.6rem,2.6vw,2.3rem);
+font-family:var(--font-heading);
+color:var(--text-primary);
+}
+
+.dashboard-welcome{
+margin:6px 0 12px;
+color:var(--text-muted);
+}
+
 .dashboard-subtitle{
 margin:8px 0 0;
 color:var(--text-muted);

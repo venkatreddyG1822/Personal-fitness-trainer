@@ -58,6 +58,11 @@ body.dark-mode .site-header:not(.is-scrolled) .brand__copy small {
     color: rgba(255, 255, 255, 0.7);
 }
 
+body.dark-mode.dashboard-page .site-header .brand__copy strong,
+body.dark-mode.dashboard-page .site-header .brand__copy small {
+    color: var(--text-primary);
+}
+
 body.dark-mode .brand__mark,
 body.dark-mode .utility-button,
 body.dark-mode .menu-button,
